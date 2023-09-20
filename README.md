@@ -42,33 +42,33 @@ This is where screenshot of deployed application will go
 
 - [Express](https://www.npmjs.com/package/express) popular web application framework for Node.js that simplifies process of building web applications/APIs
 
-npm install express
+<b>npm install express</b>
 
 - [Express-handlebars](https://www.npmjs.com/package/express-handlebars) view engine for Express.js that allows you to use Handlebars templates in applications
 
-npm install express-handlebars
+<b>npm install express-handlebars</b>
 
 - [bcrypt](https://www.npmjs.com/package/bcrypt) library for hashing passwords securely
 
-npm install bcrypt
+<b>npm install bcrypt</b>
 
-Want to install all at once?
+<b>Want to install all at once?</b>
 
-npm install express express-handlebars bcrypt
+<b>npm install express express-handlebars bcrypt</b>
 
 ## HTTP Status Codes
 
-What are they?
+<b>What are they?</b>
 
 Three-digit numbers returned by a web server in response to a client's request made to the server.
 
-Most Common Status Code:
+<b>Most Common Status Code:</b>
 
-400 Bad Request: The server cannot or will not process the request due to something that is perceived to be a client error (e.g., malformed request syntax, invalid request message framing, or deceptive request routing).
+400 Bad Request: The server cannot or will not process the request due to something that is perceived to be a client error (e.g., malformed request syntax, invalid request message framing, or deceptive request routing).:no_entry:
 
-200 Sucessful: The request succeeded.
+200 Sucessful: The request succeeded.:heavy_check_mark:
 
-Links:
+<b>Links:</b>
 
 - [HTTP status codes](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status)
 
@@ -91,45 +91,47 @@ Links:
 
 ## Github
 
-Common Commands:
+### Common Commands
 
-Clone a repository from GitHub to your local machine:
+### Clone a repository from GitHub to your local machine
 
 git clone repository-url
 
-Create a new branch:
+### Create a new branch
 
 git checkout -b feature-branch
 
-Switch to an existing branch:
+### Switch to an existing branch
 
 git checkout existing-branch
 
-List all branches:
+### List all branches
 
 git branch
 
-Add changes to staging area:
+### Add changes to staging area
 
 git add .
 
-Commit changes with a commit message:
+### Commit changes with a commit message
 
 git commit -m "commit message"
 
-Check status of local repository:
+### Check status of local repository
 
 git status
 
-Pull latest changes from main branch:
+### Pull latest changes from main branch
 
 git pull origin main
 
-Push changes to feature branch:
+### Push changes to feature branch
 
 git push origin feature-branch
 
 ## Handlebars
+
+Links:
 
 ## School Instructions
 
