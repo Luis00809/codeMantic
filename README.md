@@ -8,11 +8,14 @@ Code-Mantic, a tech-savvy dating website deployed on Heroku.
 ## Table of Contents
 
 - [Installation](#installation)
+- [Links](#links)
+- [Deployed Application Screenshot](#deployed-screenshot-of-application)
 - [Dependencies](#dependencies)
 - [HTTP Status Code](#http-status-codes)
 - [Bootstrap](#bootstrap)
 - [MySQL2](#mysql2)
 - [Github](#github)
+- [Handlebars](#handlebars)
 - [School Instructions](#school-instructions)
 - [MISC](#misc)
 - [License](#license)
@@ -23,18 +26,34 @@ Code-Mantic, a tech-savvy dating website deployed on Heroku.
 
 ## Installation
 
+## Links
+
+:open_file_folder:
+
+:arrow_forward: Github link:
+
+:arrow_forward: Deployed Heroku Page Link:
+
+## Deployed Screenshot of Application
+
+This is where screenshot of deployed application will go
+
 ## Dependencies
 
-- [Express](https://www.npmjs.com/package/express)popular web application framework for Node.js that simplifies process of building web applications/APIs
+- [Express](https://www.npmjs.com/package/express) popular web application framework for Node.js that simplifies process of building web applications/APIs
+
 npm install express
 
-- [Express-handlebars](https://www.npmjs.com/package/express-handlebars) view engine for Express.js that allows you to use Handlebars templates in applicatio
+- [Express-handlebars](https://www.npmjs.com/package/express-handlebars) view engine for Express.js that allows you to use Handlebars templates in applications
+
 npm install express-handlebars
 
 - [bcrypt](https://www.npmjs.com/package/bcrypt) library for hashing passwords securely
+
 npm install bcrypt
 
 Want to install all at once?
+
 npm install express express-handlebars bcrypt
 
 ## HTTP Status Codes
@@ -75,31 +94,42 @@ Links:
 Common Commands:
 
 Clone a repository from GitHub to your local machine:
+
 git clone repository-url
 
 Create a new branch:
+
 git checkout -b feature-branch
 
 Switch to an existing branch:
+
 git checkout existing-branch
 
 List all branches:
+
 git branch
 
 Add changes to staging area:
+
 git add .
 
 Commit changes with a commit message:
+
 git commit -m "commit message"
 
 Check status of local repository:
+
 git status
 
 Pull latest changes from main branch:
+
 git pull origin main
 
 Push changes to feature branch:
+
 git push origin feature-branch
+
+## Handlebars
 
 ## School Instructions
 
