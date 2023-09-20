@@ -1,27 +1,27 @@
 [
     { /* Payton */
-        "displayName": "",
-        "languageSpoken": "",
-        "contactMe": "",
-        "personalPronouns": "",
+        "displayName": "Peyton",
+        "languageSpoken": "Python",
+        "contactMe": "amyhytwn@aol.com",
+        "personalPronouns": "she",
         "partnerPronouns":"",
         "links":"",
-        "personalityType":"",
-        "age":"",
-        "operatingSystem":"",
-        "hobbies":""
+        "personalityType":"extroverted",
+        "age":27,
+        "operatingSystem":"windows",
+        "hobbies":"['Bubblewrap Popping', 'Extreme Pillowfighting']"
       },
       {
-        "displayName": "",
-        "languageSpoken": "",
-        "contactMe": "",
-        "personalPronouns": "",
-        "partnerPronouns":"",
+        "displayName": "Josh",
+        "languageSpoken": "['Python', 'Java']",
+        "contactMe": "jtatum1820@live.com",
+        "personalPronouns": "he",
+        "partnerPronouns":"she",
         "links":"",
-        "personalityType":"",
-        "age":"",
-        "operatingSystem":"",
-        "hobbies":""
+        "personalityType":"introverted",
+        "age":29,
+        "operatingSystem":"windows",
+        "hobbies":"['Bubblewrap Popping', 'Extreme Pillowfighting']"
       },
       { /* luis */
         "displayName": "",
@@ -94,5 +94,17 @@
         "age":"",
         "operatingSystem":"",
         "hobbies":""
-      }
+      },
+      {
+        "displayName": "",
+        "languageSpoken": "",
+        "contactMe": "",
+        "personalPronouns": "",
+        "partnerPronouns":"",
+        "links":"",
+        "personalityType":"",
+        "age":"",
+        "operatingSystem":"",
+        "hobbies":""
+      },
     ]
