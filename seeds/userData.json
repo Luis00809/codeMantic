@@ -1,5 +1,5 @@
 [
-{
+{ /* Payton */
    "username":"",
    "email":"",
    "password":""
@@ -9,7 +9,27 @@
     "email":"",
     "password":""
  },
+ { /* luis(david) */
+    "username":"",
+    "email":"",
+    "password":""
+ },
  {
+    "username":"",
+    "email":"",
+    "password":""
+ },
+ { /* Jose */
+    "username":"",
+    "email":"",
+    "password":""
+ },
+ {
+    "username":"",
+    "email":"",
+    "password":""
+ },
+ { /* donnie */
     "username":"",
     "email":"",
     "password":""
@@ -19,4 +39,5 @@
     "email":"",
     "password":""
  }
+
 ]
