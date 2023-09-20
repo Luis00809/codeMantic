@@ -31,13 +31,33 @@
  },
  { /* donnie */
     "username":"coder4luv",
-    "email":"codeallnightlog@gmail.com",
+    "email":"codeallnightlong@icqmail.com",
     "password":"password12345"
  },
  {
-    "username":"",
-    "email":"",
-    "password":""
- }
+    "username":"codeThis",
+    "email":"codethis@rocketmail.com",
+    "password":"password12345"
+ },
+ {
+    "username":"Amy",
+    "email":"amy.hill@yahoo.com",
+    "password":"password12345"
+ },
+ {
+    "username":"Colton",
+    "email":"colton.mas@aol.com",
+    "password":"password12345"
+ },
+ {
+    "username":"Michael",
+    "email":"micheal.davis@gmail.com",
+    "password":"password12345"
+ },
+ {
+    "username":"Thomas",
+    "email":"thomasedge@gmail.com",
+    "password":"password12345"
+ },
 
 ]
