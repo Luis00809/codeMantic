@@ -19,7 +19,7 @@
         "hobbies":"Bubblewrap Popping, Extreme Pillowfighting",
         "id":""
       },
-      { /* Jose */
+      {
         "languages": "c++",
         "bio":"",
         "contact_method": "nozerone@hotmail.com",
@@ -158,5 +158,5 @@
         "operating_system":"windows",
         "hobbies":"djing', 'meditating', 'yoga",
         "id":""
-      },
+      }
     ]
