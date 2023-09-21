@@ -19,7 +19,7 @@
     "display_name":"Joseph",
     "email":"nozerone@hotmail.com",
     "password":"password12345",
-    "age":"38",
+    "age":38,
     "pronouns": "he",
     "id":""
  },
@@ -35,7 +35,7 @@
     "display_name":"coder4luv",
     "email":"codeallnightlong@icqmail.com",
     "password":"password12345",
-    "age":"107",
+    "age":107,
     "pronouns": "he",
     "id":""
  },
@@ -75,7 +75,7 @@
     "display_name":"Thomas",
     "email":"thomasedge@gmail.com",
     "password":"password12345",
-    "age":"55",
+    "age":55,
     "pronouns": "he",
     "id":""
  },
