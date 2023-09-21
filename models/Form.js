@@ -51,3 +51,5 @@ Form.init({
     modelName: 'form',
 }
 );
+
+module.exports = Form;
