@@ -6,32 +6,36 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Code-Mantic</title>          
-                                                                <!-- BOOTSTRAP STYLE LINK -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+                                                                <!-- BOOTSTRAP STYLE LINK .. UPDATED VERISON -->
+ <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
 </head>
 
-        <header>
+<header>
 
-            <h1>Welcome to Code-Mantic!</h1>
+    {{!-- NAVBAR --}}
+    {{> navbar}}
 
-        </header>
+</header>
 
-                        <!-- TESTED LINKS AND THEY ARE FUNCTIONAL :) -->
 
-        <nav>
-            <ul>
-                        <!-- HOME LINK -->
-                <li><a href="/">Home</a></li>
 
-                        <!-- ABOUT PAGE LINK -->
-                <li><a href="about.handlebars">About</a></li>
+<!-- JUMBOTRON -->
+<div class="jumbotron">
 
-                        <!-- LOGIN LINK -->
-                <li><a href="login.handlebars">Login</a></li>
+    <!-- MAIN HEADING -->
+    <h1 class="display-4">Find Love in the World of Code!</h1>
+    
+   
+    <p class="lead">Discover tech-savvy singles who share your passion for coding and technology.</p>
+    
+    <!-- HORIZONTAL RULE -->
+    <hr class="my-4">
+    
+    <!-- SUB-HEADING -->
+    <p>Join Code-Mantic today and experience the perfect blend of love and technology.</p>
+    
+  
+    <a class="btn btn-primary btn-lg" href="/signup" role="button">Sign Up Now</a>
 
-                        <!-- SIGNUP LINK -->
-                 <li><a href="signup.handlebars">Signup Today!</a></li>
-
-            </ul>
-        </nav>
-
+</div>
