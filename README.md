@@ -1,7 +1,7 @@
 # project2
 Code-Mantic, a tech-savvy dating website deployed on Heroku.
 
- ![License](https://img.shields.io/badge/license-MIT-pink.svg?style=for-the-badge)
+ ![License](https://img.shields.io/badge/license-MIT-blue.svg?style=for-the-badge)
 
 ## Description
 
@@ -41,34 +41,29 @@ This is where screenshot of deployed application will go
 ## Dependencies
 
 - [Express](https://www.npmjs.com/package/express) popular web application framework for Node.js that simplifies process of building web applications/APIs
-
-<b>npm install express</b>
-
+- npm install express
 - [Express-handlebars](https://www.npmjs.com/package/express-handlebars) view engine for Express.js that allows you to use Handlebars templates in applications
-
-<b>npm install express-handlebars</b>
-
+- npm install express-handlebars
 - [bcrypt](https://www.npmjs.com/package/bcrypt) library for hashing passwords securely
+- npm install bcrypt
 
-<b>npm install bcrypt</b>
+### Want to install all at once?
 
-<b>Want to install all at once?</b>
-
-<b>npm install express express-handlebars bcrypt</b>
+npm install express express-handlebars bcrypt
 
 ## HTTP Status Codes
 
-<b>What are they?</b>
+### What are they?
 
 Three-digit numbers returned by a web server in response to a client's request made to the server.
 
-<b>Most Common Status Code:</b>
+### Most Common Status Code
 
 400 Bad Request: The server cannot or will not process the request due to something that is perceived to be a client error (e.g., malformed request syntax, invalid request message framing, or deceptive request routing).:no_entry:
 
 200 Sucessful: The request succeeded.:heavy_check_mark:
 
-<b>Links:</b>
+Links:
 
 - [HTTP status codes](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status)
 
