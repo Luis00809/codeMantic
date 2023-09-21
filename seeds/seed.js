@@ -1,5 +1,6 @@
 const sequelize = require('../config/connection');
 const { User, Form } = require('../models');
+const bcrypt = require('bcrypt'); // added bcyrpt so declared but value never read 
 
 const userData = require('./userData.json');
 const formData = require('./formData.json');
