@@ -1,0 +1,162 @@
+[
+    { 
+        "languages": "Python",
+        "bio":"",
+        "contact_method": "amyhytwn@aol.com",
+        "partner_pronouns":"he",
+        "personality_type":"extroverted",
+        "operating_system":"windows",
+        "hobbies":"Bubblewrap Popping,Extreme Pillowfighting",
+        "id":""
+      },
+      {
+        "languages": "Python, Java",
+        "bio":"",
+        "contact_method": "jtatum1820@live.com",
+        "partner_pronouns":"she",
+        "personality_type":"introverted",
+        "operating_system":"windows",
+        "hobbies":"Bubblewrap Popping, Extreme Pillowfighting",
+        "id":""
+      },
+      { /* Jose */
+        "languages": "c++",
+        "bio":"",
+        "contact_method": "nozerone@hotmail.com",
+        "partner_pronouns":"she",
+        "personality_type":"extroverted",
+        "operating_system":"windows",
+        "hobbies":"parkour",
+        "id":""
+      },
+      {
+        "languages": "python",
+        "bio":"",
+        "contact_method": "lmnoppp@pm.com",
+        "partner_pronouns":"they",
+        "personality_type":"extroverted",
+        "operating_system":"macOS",
+        "hobbies":"rollerskating",
+        "id":""
+      },
+      { 
+        "languages": "JavaScript, HTML, CSS,Python",
+        "bio":"I enjoy long walks along the field rows and moonshine till morning",
+        "contact_method": "codeallnightlong@gmail.com",
+        "partner_pronouns":"he",
+        "personality_type":"extroverted",
+        "operating_system":"macOS",
+        "hobbies":"wood widdling, butter churning, yarn weaving",
+        "id":""
+      },
+      {
+        "languages": "HTML, CSS, JS, C++",
+        "bio":"Here FR. If you sus keep scrolling.",
+        "contact_method": "codethis@rocketmail.com",
+        "partner_pronouns":"they",
+        "personality_type":"extroverted",
+        "operating_system":"macOS",
+        "hobbies":"tweeting, minecraft,",
+        "id":""
+      },
+      { 
+        "languages": "SQL",
+        "bio":"",
+        "contact_method": "amy.hill@yahoo.com",
+        "partner_pronouns":"he",
+        "personality_type":"extroverted",
+        "operating_system":"macOS",
+        "hobbies":"Beard Grooming",
+        "id":""
+      },
+      {
+        "languages": "C++",
+        "bio":"",
+        "contact_method": "colton.mas@aol.com",
+        "partner_pronouns":"he",
+        "personality_type":"extroverted",
+        "operating_system":"windows",
+        "hobbies":"Bug Hunting",
+        "id":""
+      },
+      {
+        "languages": "CSS",
+        "bio":"",
+        "contact_method": "micheal.davis@gmail.com",
+        "partner_pronouns":"she",
+        "personality_type":"introverted",
+        "operating_system":"windows",
+        "hobbies":"dancing",
+        "id":""
+      },
+      {
+        "languages": "HTML",
+        "bio":"",
+        "contact_method": "thomasedge@gmail.com",
+        "partner_pronouns":"she",
+        "personality_type":"introverted",
+        "operating_system":"macOS",
+        "hobbies":"swimming in public fountains",
+        "id":""
+      },
+      {
+        "languages": "",
+        "bio":"",
+        "contact_method": "elturkey@msn.com",
+        "partner_pronouns":"they",
+        "personality_type":"extroverted",
+        "operating_system":"",
+        "hobbies":"driking coffee', 'skateboarding",
+        "id":""
+      },
+      {
+        "languages": "java",
+        "bio":"",
+        "contact_method": "glenn@misfits.com",
+        "partner_pronouns":"she",
+        "personality_type":"extroverted",
+        "operating_system":"linux",
+        "hobbies":"playing music",
+        "id":""
+      },
+      {
+        "languages": "javaScript', 'html', 'css', 'php",
+        "bio":"",
+        "contact_method": "susy13@hotmail.com",
+        "partner_pronouns":"she",
+        "personality_type":"extroverted",
+        "operating_system":"windows",
+        "hobbies":"dancing', 'singing",
+        "id":""
+      },
+      {
+        "languages": "javaScript', 'python",
+        "bio":"",
+        "contact_method": "robb2666@yahoo.com",
+        "partner_pronouns":"she",
+        "personality_type":"introverted",
+        "operating_system":"macOS', 'windows",
+        "hobbies":"poetry",
+        "id":""
+      },
+      {
+        "languages": "ruby', 'html', 'css', 'php', 'java",
+        "bio":"",
+        "contact_method": "pmp239@gmail.com",
+        "partner_pronouns":"they",
+        "personality_type":"introverted",
+        "operating_system":"windows",
+        "hobbies":"cycling', 'coding', 'driving",
+        "id":""
+      },
+      {
+        "languages": "javaScript', 'ruby', 'python",
+        "bio":"",
+        "contact_method": "suerte33@yahoo.com",
+        "partner_pronouns":"he",
+        "personality_type":"extroverted",
+        "operating_system":"windows",
+        "hobbies":"djing', 'meditating', 'yoga",
+        "id":""
+      },
+    ]
