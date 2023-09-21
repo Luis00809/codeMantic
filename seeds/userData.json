@@ -1,13 +1,13 @@
 [
 { /* Payton */
-   "username":"",
-   "email":"",
-   "password":""
+   "username":"Peyton",
+   "email":"amyhytwn@aol.com",
+   "password":"password12345"
 },
 {
-    "username":"",
-    "email":"",
-    "password":""
+    "username":"Josh",
+    "email":"jtatum1820@live.com",
+    "password":"password12345"
  },
  { /* luis(david) */
     "username":"",
@@ -30,14 +30,34 @@
     "password":""
  },
  { /* donnie */
-    "username":"",
-    "email":"",
-    "password":""
+    "username":"coder4luv",
+    "email":"codeallnightlong@icqmail.com",
+    "password":"password12345"
  },
  {
-    "username":"",
-    "email":"",
-    "password":""
- }
+    "username":"codeThis",
+    "email":"codethis@rocketmail.com",
+    "password":"password12345"
+ },
+ {
+    "username":"Amy",
+    "email":"amy.hill@yahoo.com",
+    "password":"password12345"
+ },
+ {
+    "username":"Colton",
+    "email":"colton.mas@aol.com",
+    "password":"password12345"
+ },
+ {
+    "username":"Michael",
+    "email":"micheal.davis@gmail.com",
+    "password":"password12345"
+ },
+ {
+    "username":"Thomas",
+    "email":"thomasedge@gmail.com",
+    "password":"password12345"
+ },
 
 ]
