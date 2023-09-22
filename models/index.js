@@ -2,14 +2,16 @@ const User = require('./User');
 const Form = require('./Form');
 
 User.hasOne(Form, {
-    foreignKey: "id",       // changed foreign key
-    onDelete: "CASCADE"
+    foreignKey: "id",
+    onDelete: "CASCADE",
+    onUpdate: "CASCADE"
 
 });
 
-Form.hasOne(User, {          // changed to belongsTo from hasOne
-    foreignKey: "id",       // changed foreign key
-    onDelete: "CASCADE"
+Form.hasOne(User, {
+    foreignKey: "id",
+    onDelete: "CASCADE",
+    onUpdate: "CASCADE"
 })
 
 module.exports = { User, Form };
