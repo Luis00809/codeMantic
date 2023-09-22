@@ -5,7 +5,7 @@ const {User, Form} =require('../models')
 
 router.get('/', async (req, res) => {
     try{
-        const userFormData = await Form.findAll({
+        const userData = await User.findAll({
             include: [
                 {
                    all: true, nested: true ,
@@ -13,10 +13,10 @@ router.get('/', async (req, res) => {
             ],
         })
 
-        const formData = userFormData.map((formData) => formData.get({ plain: true }));
+        const dataUser = userData.map((formData) => formData.get({ plain: true }));
 
 res.render('homepage',{
-    formData,
+    dataUser,
     logged_in: req.session.logged_in 
 });
 } catch (err) {
