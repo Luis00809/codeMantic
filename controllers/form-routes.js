@@ -38,9 +38,9 @@ router.get('/form/:id', async (req, res) => {
 
         const form = formData.get({ plain: true });
 
-        res.render('handlebar', {
-            form,
-        });
+        // res.render('handlebar', {
+        //     form,
+        // });
 
         res.status(200).json(form);
 
