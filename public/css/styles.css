@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /*
  * Globals
  */
@@ -75,4 +76,8 @@ form {
   width: max(300px, 20vw);
   background-color: #0a0a23;
   padding: 0.4rem;
+=======
+* {
+    background-color: cornflowerblue;
+>>>>>>> main
 }
