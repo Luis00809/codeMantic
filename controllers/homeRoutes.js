@@ -5,7 +5,7 @@ const {User, Form} =require('../models')
 
 router.get('/', async (req, res) => {
     try{
-        const userFormData = await Form.findAll({
+        const userData = await User.findAll({
             include: [
                 {
                    all: true, nested: true ,
@@ -13,15 +13,24 @@ router.get('/', async (req, res) => {
             ],
         })
 
-        const formData = userFormData.map((formData) => formData.get({ plain: true }));
+        const dataUser = userData.map((formData) => formData.get({ plain: true }));
 
 res.render('homepage',{
-    formData,
+    dataUser,
     logged_in: req.session.logged_in 
 });
 } catch (err) {
     res.status(500).json(err);
   }
 });
+
+router.get('/login', (req, res) => {
+    if (req.session.logged_in) {
+      res.redirect('/profile');
+      return;
+    }
+  
+    res.render('login');
+  });
       
 module.exports = router;

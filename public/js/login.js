@@ -37,7 +37,7 @@ const loginFormHandler = async (event) => {
       });
   
       if (response.ok) {
-        document.location.replace('/dashboard');
+        document.location.replace('/login');
       } else {
         alert(response.statusText);
       }
@@ -45,9 +45,9 @@ const loginFormHandler = async (event) => {
   };
 
   document
-    .querySelector('.login-form')
+    .querySelector('.login')
     .addEventListener('submit', loginFormHandler);
 
     document
-    .querySelector('.signup-form')
+    .querySelector('.signup')
     .addEventListener('submit', signupFormHandler);
