@@ -8,7 +8,7 @@ User.hasOne(Form, {
 
 });
 
-Form.hasOne(User, {
+Form.belongsTo(User, {
     foreignKey: "id",
     onDelete: "CASCADE",
     onUpdate: "CASCADE"
