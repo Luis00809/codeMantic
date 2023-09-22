@@ -1,3 +1,3 @@
-DROP DATABASE IF EXISTS codeMantic_db;
+DROP DATABASE IF EXISTS cms_db;
 
-CREATE DATABASE codeMantic_db;
+CREATE DATABASE cms_db;
