@@ -1,4 +1,5 @@
-# project2
+# codeMantic
+
 Code-Mantic, a tech-savvy dating website deployed on Heroku.
 
  ![License](https://img.shields.io/badge/license-MIT-blue.svg?style=for-the-badge)
@@ -9,6 +10,7 @@ Code-Mantic, a tech-savvy dating website deployed on Heroku.
 
 - [Installation](#installation)
 - [Links](#links)
+- [Module Two Resume](#module-two-resume)
 - [Deployed Application Screenshot](#deployed-screenshot-of-application)
 - [Dependencies](#dependencies)
 - [HTTP Status Code](#http-status-codes)
@@ -16,6 +18,7 @@ Code-Mantic, a tech-savvy dating website deployed on Heroku.
 - [MySQL2](#mysql2)
 - [Github](#github)
 - [Handlebars](#handlebars)
+- [Directory Structure](#directory-structure)
 - [School Instructions](#school-instructions)
 - [MISC](#misc)
 - [License](#license)
@@ -33,6 +36,14 @@ Code-Mantic, a tech-savvy dating website deployed on Heroku.
 :arrow_forward: Github link:
 
 :arrow_forward: Deployed Heroku Page Link:
+
+## Module Two Resume
+
+Writing a note here to remind us to deploy project to project two resume.
+
+Link:
+
+Images: (Optional)
 
 ## Deployed Screenshot of Application
 
@@ -128,6 +139,20 @@ git push origin feature-branch
 
 Links:
 
+- [NPM PACKAGE HANDLEBARS](https://www.npmjs.com/package/express-handlebars)
+
+## Directory Structure
+
+Config: Configuration Files, Which Includes Our Database Connection Settings, With File (connection.js.)
+Server.js: Primary Entry Point For Express Application
+Public: Holds Our Static Files Like CSS, JavaScript, And Images
+Seeds: To Populate Our Database.
+Models: Sequelize Models (which contains User.js and Form.js)
+Utils: Contains Helper Functions.
+Views: Handlebar Templates For Server-Rendered HTML Pages
+db: Holds Schema.sql
+Controllers: Route Handling. (Files, Such as, homeRoutes.js)
+
 ## School Instructions
 
 Links:
@@ -147,7 +172,34 @@ Images:
 
 ## MISC
 
+### To See A List Of Scripts
+
+npm run
+
+### Check For Updates
+
+npm outdated
+
+### Update All Packages
+
+npm update
+
+### Update One Package
+
+npm update package-name
+
+### Run Tests
+
+npm test
+
 Links:
+
+[Youtube Video Peyton All npm Commands](https://www.youtube.com/watch?v=lNLeRmnkug8)
+
+Images:
+
+![npm help](<images/npm help.jpg>)
+![updated or not updated verisons of dep](<images/server.js - codeMantic - Visual Studio Code 9_21_2023 1_46_40 AM.jpg>)
 
 ## License
 
