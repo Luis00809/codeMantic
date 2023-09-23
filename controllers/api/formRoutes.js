@@ -63,7 +63,16 @@ router.get('/filteredList/', async (req, res) => {
         res.status(400).json(err)
         console.log(err);
     }}
-})
+});
+
+
+
+// client side would look something like this: 
+// const response = await fetch('/api/form/filteredList?FormKey=clientRequest&FormKey=clientRequest...', {
+//  method: 'GET',
+//  body: JSON.stringify({ checkedValues }),
+//   headers: { 'Content-Type': 'application/json' },
+// });
 
 
 module.exports = router;
