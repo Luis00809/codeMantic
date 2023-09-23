@@ -43,6 +43,10 @@ User.init({
         type: DataTypes.STRING,
         allowNull: false,
         
+    },
+    image: {
+        type: DataTypes.BLOB,
+        allowNull: true,
     }
 },
 {
