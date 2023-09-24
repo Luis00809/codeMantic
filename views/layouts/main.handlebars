@@ -12,56 +12,61 @@
   <body>
     <body class="d-flex h-100 text-center text-bg-dark" data-new-gr-c-s-check-loaded="14.1125.0" data-gr-ext-installed="">
       
-
-        <div class="dropdown position-fixed bottom-0 end-0 mb-3 me-3 bd-mode-toggle">
-          <button class="btn btn-bd-primary py-2 dropdown-toggle d-flex align-items-center" id="bd-theme" type="button" aria-expanded="false" data-bs-toggle="dropdown" aria-label="Toggle theme (dark)">
-            <svg class="bi my-1 theme-icon-active" width="1em" height="1em"><use href="#moon-stars-fill"></use></svg>
-            <span class="visually-hidden" id="bd-theme-text">Toggle theme</span>
-          </button>
-          <ul class="dropdown-menu dropdown-menu-end shadow" aria-labelledby="bd-theme-text">
-            <li>
-              <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="light" aria-pressed="false">
-                <svg class="bi me-2 opacity-50 theme-icon" width="1em" height="1em"><use href="#sun-fill"></use></svg>
-                Light
-                <svg class="bi ms-auto d-none" width="1em" height="1em"><use href="#check2"></use></svg>
-              </button>
-            </li>
-            <li>
-              <button type="button" class="dropdown-item d-flex align-items-center active" data-bs-theme-value="dark" aria-pressed="true">
-                <svg class="bi me-2 opacity-50 theme-icon" width="1em" height="1em"><use href="#moon-stars-fill"></use></svg>
-                Dark
-                <svg class="bi ms-auto d-none" width="1em" height="1em"><use href="#check2"></use></svg>
-              </button>
-            </li>
-            <li>
-              <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="auto" aria-pressed="false">
-                <svg class="bi me-2 opacity-50 theme-icon" width="1em" height="1em"><use href="#circle-half"></use></svg>
-                Auto
-                <svg class="bi ms-auto d-none" width="1em" height="1em"><use href="#check2"></use></svg>
-              </button>
-            </li>
-          </ul>
-        </div>
-    
         
     <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
-      <header class="mb-auto">
-        <div>
-          {{!-- <img src="/assets/codemantic.svg" class="float-md-start mb-0" /> --}}
-          <nav class="nav nav-masthead justify-content-center float-md-end">
-            <a class="nav-link fw-bold py-1 px-0" href="/">Home</a>
-            {{#if logged_in}}
-        <a href="/" id="logout">Logout</a>
-      {{else}}
-           
-             {{/if}}
-            <a class="nav-link fw-bold py-1 px-0" href="#">Contact</a>
-          </nav>
-        </div>
-      </header>
+      
+      <nav class="navbar navbar-expand-md navbar-light fixed-top bg-light">
+
+
+              <div class="container-fluid d-flex w-">
+            
+                {{!-- BRAND LINK WITH PHOTO .. IF WE WANT TO ADD PHOTO HERE WE CAN! --}}
+                <a class="navbar-brand" href="/">
+                  <h1 class="float-md-start mb-0">&lt;codeMantic&gt;</h1> {{! TYPELOGO GOES HERE }}
+                </a>
+            
+                {{!-- TOGGLE BUTTON FOR SMALL SCREENS --}}
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+            
+            
+                {{!-- NAV LINKS --}}
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+            
+                  <ul class="navbar-nav me-auto mb-2 mb-md-0">
+            
+            
+                    {{!-- HOME LINK --}}
+                    <li class="nav-item">
+            
+                      <a class="nav-link active" aria-current="page" href="/">Home</a>
+            
+                    </li>
+            
+            
+                    {{!-- ABOUT LINK --}}
+                    <li class="nav-item">
+            
+                      <a class="nav-link" href="/about">About CodeMantic</a> 
+            
+                    </li>
+            
+            
+              
+            
+                  </ul>
+            
+                </div>
+            
+              </div>
+            
+            </nav>
     
       <main class="px-3">
-        <h1>codeMantic</h1>
+        <div class="container fluid">
+        <img src="/assets/images/codemantic_no_background.svg" class="float-md-start mb-0"id="logo" alt="codemantic logo" width="360" height="300" id="logo" />
+        </div>
         <p class="lead">Codemantic is a datting platform for web developers. Search for users that match your criteria, then solve a coding issue to connect.</p>
         <p class="lead">
           {{{body}}}
@@ -70,7 +75,7 @@
       </main>
     
       <footer class="mt-auto text-white-50">
-        <p>Cover template for <a href="https://getbootstrap.com/" class="text-white">Bootstrap</a>, by <a href="https://twitter.com/mdo" class="text-white">@mdo</a>.</p>
+        
       </footer>
     </div>
      {{#if logged_in}}

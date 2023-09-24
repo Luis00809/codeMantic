@@ -1,2 +1,191 @@
 <!-- views/userProfile.handlebars -->
 
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title alt="a dating app for developers">codeMantic</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link type="stylesheet" href="/codeMantic/public/css/styles.css" />
+  </head>
+  <body>
+    <body
+      class="d-flex h-100 text-center text-bg-dark"
+      data-new-gr-c-s-check-loaded="14.1125.0"
+      data-gr-ext-installed=""
+    >
+      <div class="container">
+        <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+          <header class="mb-auto">
+            <nav class="navbar navbar-expand-md navbar-light fixed-top bg-light">
+
+
+              <div class="container-fluid">
+            
+                {{!-- BRAND LINK WITH PHOTO .. IF WE WANT TO ADD PHOTO HERE WE CAN! --}}
+                <a class="navbar-brand" href="/">
+                  <h1 class="float-md-start mb-0">&lt;codeMantic&gt;</h1> {{! TYPELOGO GOES HERE }}
+                </a>
+            
+                {{!-- TOGGLE BUTTON FOR SMALL SCREENS --}}
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+            
+            
+                {{!-- NAV LINKS --}}
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+            
+                  <ul class="navbar-nav me-auto mb-2 mb-md-0">
+            
+            
+                    {{!-- HOME LINK --}}
+                    <li class="nav-item">
+            
+                      <a class="nav-link active" aria-current="page" href="/">Home</a>
+            
+                    </li>
+            
+            
+                    {{!-- ABOUT LINK --}}
+                    <li class="nav-item">
+            
+                      <a class="nav-link" href="/about">About CodeMantic</a> 
+            
+                    </li>
+            
+            
+                    {{!-- LOGIN LINK
+                    <li class="nav-item">
+            
+                      <a class="nav-link" href="/login">Login</a> 
+            
+                    </li> --}}
+            
+            
+                    {{!-- SIGN UP LINK --}}
+                    <li class="nav-item">
+            
+                      <a class="nav-link" href="/login">Sign Up Today!</a> 
+            
+                    </li>
+            
+                  </ul>
+            
+            
+                  {{!-- SEARCH FORM --}}
+                  {{!-- <form class="d-flex">
+            
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            
+                    <button class="btn btn-outline-success" type="submit">Search</button> --}}
+            
+                  </form>
+            
+                </div>
+            
+              </div>
+            
+            </nav>
+            <!-- <div>
+              <img
+                src="/assets/images/codemantic_no_background.svg"
+                class="float-md-start mb-0"
+              />
+              <nav class="nav nav-masthead justify-content-center float-md-end">
+                <a class="nav-link fw-bold py-1 px-0" href="/">Home</a>
+                {{#if logged_in}}
+                <a href="/" id="logout">Logout</a>
+                {{else}} {{/if}}
+                <a class="nav-link fw-bold py-1 px-0" href="#">Contact</a>
+              </nav>
+              
+            </div> -->
+            <!-- {{!-- NAVBAR --}}
+            {{> navbar}} -->
+            
+          </header>
+
+          <div class="row row-cols-1 row-cols-md-3 g-4">
+            <div class="col">
+              <div class="card h-100">
+                <img
+                  src="/codeMantic/public/assets/images/istockphoto-1337144146-612x612.jpg"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h5 class="card-title">{{User Name}}</h5>
+                  
+                  <a href="#" class="btn btn-primary">Debbug my code</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg">
+              <div class="card h-100 w-30">
+                <div class="card-body">
+                  <h5 class="card-title">User Profile</h5>
+                  <p class="card-text text-start">Pronouns: {{pronouns}}</p>
+            
+                  <p class="card-text text-start">Age: {{age}}</p>
+
+                  <p class="card-text text-start">Operating System: {{operating}}</p>
+                  
+                  <p class="card-text text-start">Programing Languages:</p>
+                
+                  <ul class="Languages">
+                    {{#each languages}}
+                    <li>{{this}}</li>
+                    {{#each}}
+                  </ul>
+                  <p class="card-text text-start">Personality type: {{personality}}</p>
+                  <p class="card-text text-start">Hobbies:</p>
+                  <ul class="hobbies">
+                    {{#each hobbies}}
+                    <li>{{this}}</li>
+                    {{#each}}
+                  </ul>
+                  <p class="card=text text-start">Bio: {{bio}}</p>
+                  <dataset >
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        {{#if logged_in}}
+        <script src="/js/logout.js"></script>
+        {{/if}}
+        <script src="/js/login.js"></script>
+        
+        <script
+          src="/docs/5.3/dist/js/bootstrap.bundle.min.js"
+          integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+          crossorigin="anonymous"
+        ></script>
+       
+
+        <div id="loom-companion-mv3" ext-id="liecbddmkiiihnedobmlmillhodjkdmb">
+          <section id="shadow-host-companion"></section>
+        </div>
+      </div>
+    </body>
+  </body>
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+    crossorigin="anonymous"
+  ></script>
+</html>
