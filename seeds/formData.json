@@ -19,7 +19,7 @@
       "operating_system":"windows",
       "hobbies":"Bubblewrap Popping, Extreme Pillowfighting",
       "id":"",
-      "ageRange": "18-24"
+      "ageRange": "25-34"
     },
     {
       "languages": "c++",
@@ -30,7 +30,7 @@
       "operating_system":"windows",
       "hobbies":"parkour",
       "id":"",
-      "ageRange": "18-24"
+      "ageRange": "35-44"
     },
     {
       "languages": "python",
@@ -52,7 +52,7 @@
       "operating_system":"macOS",
       "hobbies":"wood widdling, butter churning, yarn weaving",
       "id":"",
-      "ageRange": "18-24"
+      "ageRange": "40-60"
     },
     {
       "languages": "HTML, CSS, JS, C++",

@@ -1,0 +1,25 @@
+[
+
+        {
+          "Review_text": "Awesome!",
+          "reviewBadge": "200",
+          "user_id": 1
+        },
+      
+      
+        {
+          "Review_text": "Wonderful Date",
+          "reviewBadge": "400",
+          "user_id": 2
+        },
+      
+      
+        {
+          "Review_text": "Excellent!",
+          "reviewBadge": "100",
+          "user_id": 3
+      
+        }
+      
+      ]
+      

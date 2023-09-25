@@ -1,0 +1,100 @@
+{{! EDIT PROFILE }}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Profile</title>
+     {{! BOOTSTRAP LINK}}
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="../public/css/styles.css">    {{! LINKED STYLES SHEET IN PUBLIC FOLDER }}
+</head>
+<body>
+
+{{! EDIT PROFILE HEADER }}
+    <header class="text-center mt-3">
+        <h1>Edit Profile</h1>
+    </header>
+
+
+<main class="container mt-4">
+
+
+                {{! EDIT PROFILE LINK }}
+                <div class="mb-4">
+                <a href="/userProfile/{{id}}" class="btn btn-primary">Edit Profile</a>
+                </div>
+          
+            {{! USERS USERNAME }}
+            <div class="mb-3">
+            <label for="username">Username:</label>
+            <input type="text" id="username" {{user.username}}>
+            </div>
+
+
+            {{! USERS EMAIL}}
+            <div class="mb-3">
+            <label for="email">Email:</label>
+            <input type="email" id="email" {{user.email}}>
+            </div>
+
+            {{! USERS LANGUAGES }}
+            <div class="mb-3">
+            <label for="languages">Languages:</label>
+            <input type="text" id="languages" {{user.languages}}>
+            </div>
+
+            {{! USERS PERSONALITY TYPE }}
+            <div class="mb-3">
+            <label for="personalityType">Personality Type:</label>
+            <input type="text" id="personalityType" {{user.personality_type}}>
+            </div>
+
+            {{! USERS BIO }}
+            <div class="mb-3">
+            <label for="bio">Bio:</label>
+            <textarea id="bio">{{user.bio}}"</textarea>
+            </div>
+
+            {{! USERS CONTACT METHOD }}
+            <div class="mb-3">
+            <label for="contactMethod">Contact Method:</label>
+            <input type="text" id="contactMethod" {{user.contact_method}}>
+            </div>
+
+            {{! USERS AGE RANGE }}
+            <div class="mb-3">
+            <label for="ageRange">Age Range:</label>
+            <input type="text" id="ageRange" {{user.ageRange}}>
+            </div>
+
+            {{! USERS OPERATING SYSTEM }}
+            <div class="mb-3">
+            <label for="operatingSystem">Operating System:</label>
+            <input type="text" id="operatingSystem" {{user.operating_system}}>
+            </div>
+
+            {{! USERS HOBBIES }}
+            <div class="mb-3">
+            <label for="hobbies">Hobbies:</label>
+            <textarea id="hobbies">{{user.hobbies}}</textarea>
+            </div>
+
+            {{! PARTNER PRONOUNS }}
+            <div class="mb-3">
+            <label for="partnerPronouns">Partner Pronouns:</label>
+            <input type="text" id="partnerPronouns" {{user.partner_pronouns}}>
+            </div>
+
+            {{! SUBMIT BUTTON}}
+            <button type="submit" class="btn btn-primary">Save Changes</button>
+
+       
+
+</main>
+
+
+{{> footer}}
+</body>
+</html>
