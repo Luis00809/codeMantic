@@ -15,8 +15,14 @@ Review.init(
       allowNull: false,
       validate: {
         len: [1]
-      }
+      },
     },
+
+    reviewBadge: {    // ADDED reviewBadge
+      type: DataTypes.STRING,     
+      allowNull: true,  
+    },
+
     user_id: {
       type: DataTypes.INTEGER,
       allowNull: false,
