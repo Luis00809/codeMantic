@@ -6,6 +6,10 @@ Code-Mantic, a tech-savvy dating website deployed on Heroku.
 
 ## Description
 
+Introducing CodeMantic, a groundbreaking project born from the collective creativity of GROUP 3!
+
+Codemantic, isn't your ordinary dating website, it's a community-driven platform designed by developers, for developers. New users are brought up to home page, which allows them to either login or signup.
+
 ## Table of Contents
 
 - [Installation](#installation)
@@ -82,6 +86,11 @@ Links:
 
 Links:
 
+- [Bootstrap Forms](https://getbootstrap.com/docs/5.3/forms/overview/)
+- [BootStrap Badges](https://getbootstrap.com/docs/5.3/components/badge/)
+- [Bootsrap Cards](https://getbootstrap.com/docs/5.3/components/card/#body)
+- [Bootstrap Buttons](https://getbootstrap.com/docs/5.3/components/buttons/)
+- [Bootstrap Accordion](https://getbootstrap.com/docs/5.3/components/accordion/)
 - [Bootstrap Website](https://getbootstrap.com/)
 - [Bootstrap Examples](https://getbootstrap.com/docs/5.3/examples/)
 - [Bootstrap Themes](https://themes.getbootstrap.com/)
@@ -140,6 +149,12 @@ git push origin feature-branch
 Links:
 
 - [NPM PACKAGE HANDLEBARS](https://www.npmjs.com/package/express-handlebars)
+- [Partials](https://handlebarsjs.com/guide/partials.html)
+- [Expressions](https://handlebarsjs.com/guide/expressions.html)
+- [Introduction](https://handlebarsjs.com/guide/)
+- [Block Helpers](https://handlebarsjs.com/guide/block-helpers.html#basic-blocks)
+- [Built In Helpers](https://handlebarsjs.com/guide/builtin-helpers.html)
+- [Hooks](https://handlebarsjs.com/guide/hooks.html)
 
 ## Directory Structure
 

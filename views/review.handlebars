@@ -1,27 +1,77 @@
-{{!-- 
-100 - continue
-101 - switching Protocols
-102 - Processing
-103- Early Hints
-200 - Ok
-202 - Accepted
-208 - Already Reported
-226 - IM Used
-301 - Moved Permanently
-303 - See other
-400 - Bad Request
-401 - Unauthorized
-402 - Payment Required
-403 - Forbidden
-404 - Not Found
-406 - Not Acceptable
-409 - Confilict
-410 - Gone
-411 - Length Required
-416 - Range Not Satisfiable
-417 - Expectation Failed
-425 - Too Early
-429 - Too many requests
-451 - Unavaialble for Legal Reasons 
+{{! Reviews }}
 
---}}
+{{!-- 100 - continue , 101 - switching Protocols , 102 - Processing , 103- Early Hints , 200 - Ok , 202 - Accepted, 208 - Already Reported , 226 - IM Used , 301 - Moved Permanently , 303 - See other , 400 - Bad Request , 401 - Unauthorized
+402 - Payment Required , 403 - Forbidden , 404 - Not Found , 406 - Not Acceptable , 409 - Confilict , 410 - Gone, 411 - Length Required , 416 - Range Not Satisfiable , 417 - Expectation Failed , 425 - Too Early , 429 - Too many requests , 451 - Unavaialble for Legal Reasons  --}}
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Leave A Review</title>
+ {{! BOOTSTRAP LINK}}
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+<link rel="stylesheet" href="../public/css/styles.css">    {{! LINKED STYLES SHEET IN PUBLIC FOLDER }}
+</head>
+
+
+<body>
+
+    <header class="text-center mt-3">   
+
+        {{! REVIEWS HEADER }}
+
+        <h1>How Did Your Date Go?</h1>
+
+        <h2>Leave A Review And Select An HTTP Status Badge For User:</h2>
+
+    </header>
+
+ <main class="container mt-4">
+
+    {{! REVIEW FORM}}
+    <section class="review-form">
+
+            {{! USER ABLE TO WRITE REVIEW }}
+                <div class="mb-3">
+
+                <label for="Review_text" class="form-label">How Was Your Experience?</label>
+
+                <textarea class="form-control" id="Review_text"></textarea>
+
+                </div>
+
+                {{! HTTP STATUS BADGE SELECTION }}  
+                <div class="mb-3">
+
+                <label for="reviewBadge" class="form-label">Choose A Status Code Badge:</label>
+
+                <select class="form-select" id="reviewBadge">
+
+                {{#each statusCodes}}
+
+                <option value="{{this.code}}">{{this.name}}</option> {{! had to add this before code and name }}
+
+                {{/each}}
+
+                </select>
+
+                </div>
+
+                {{! SUBMIT BUTTON }}
+                <a href="/submitReviews" class="btn btn-primary">Submit HTTP Status Badge</button>
+
+            
+        </section>
+        
+    </main>
+
+
+
+
+
+
+</body>
+
+</html>
