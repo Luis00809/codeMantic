@@ -44,10 +44,10 @@ User.init({
         allowNull: false,
         
     },
-    image: {
-        type: DataTypes.BLOB,
-        allowNull: true,
-    }
+    // image: {
+    //     type: DataTypes.BLOB,
+    //     allowNull: true,
+    // }
 },
 {
     hooks: {
