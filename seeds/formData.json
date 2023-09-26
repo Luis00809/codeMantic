@@ -1,19 +1,5 @@
 [
 
-  { 
-
-      "languages": "JavaScript, CSS, HTML",
-      "bio": "Hello! I'm Peyton, and I'm on a mission to find someone to be the CSS to my HTML. Together, we'll create not just beautiful websites but also a beautiful, responsive love story. When I'm not immersed in code, you can find me popping bubble wrap and having epic pillow fights. You can reach me at amyhytwn@aol.com.",
-      "contact_method": "amyhytwn@aol.com",
-      "partner_pronouns":"he",
-      "personality_type":"extroverted",
-      "operating_system":"windows",
-      "hobbies": "Bubblewrap Popping, Extreme Screen Staring, Music, Traveling, Extreme Pillowfighting, Hiking, Photography, Playing Musical Instruments, Coding Challenges, Data Analysis, Gaming, Cooking",
-      "ageRange": "18-24",
-      "userForm": 1
-    },
-
-
     {
 
       "languages": "Python, Java, JavaScript, C#, Ruby, PHP, HTML, CSS, SQL",
@@ -24,10 +10,20 @@
       "operating_system":"windows",
       "hobbies": "Bubblewrap Popping, Extreme Pillowfighting, Reading, Netflix, Baking, Traveling, Extreme Screen Staring, Hulu, Mobile App Development, UX/UI Design, Board Game Nights, Outdoor Adventure",
       "ageRange": "25-34",
+      "userForm": 1
+    },
+    { 
+
+      "languages": "JavaScript, CSS, HTML",
+      "bio": "Hello! I'm Peyton, and I'm on a mission to find someone to be the CSS to my HTML. Together, we'll create not just beautiful websites but also a beautiful, responsive love story. When I'm not immersed in code, you can find me popping bubble wrap and having epic pillow fights. You can reach me at amyhytwn@aol.com.",
+      "contact_method": "amyhytwn@aol.com",
+      "partner_pronouns":"he",
+      "personality_type":"extroverted",
+      "operating_system":"windows",
+      "hobbies": "Bubblewrap Popping, Extreme Screen Staring, Music, Traveling, Extreme Pillowfighting, Hiking, Photography, Playing Musical Instruments, Coding Challenges, Data Analysis, Gaming, Cooking",
+      "ageRange": "18-24",
       "userForm": 2
     },
-
-
     {
 
       "languages": "C++, Python, Java, JavaScript, Ruby",
@@ -40,8 +36,6 @@
       "ageRange": "35-44",
       "userForm": 3
     },
-
-
     {
 
       "languages": "Python, Java, JavaScript, Ruby",
