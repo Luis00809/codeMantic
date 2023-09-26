@@ -1,8 +1,10 @@
 const sequelize = require('../config/connection');
-const { User, Form } = require('../models');
+const { User, Form } = require('../models');  // added review
+const Review = require('../models/Review');
 
 const userData = require('./userData.json');
 const formData = require('./formData.json');
+const reviewData = require('./reviewData.json'); // added reviewData json
 
 const seedDatabase = async () => {
   await sequelize.sync({ force: true });
@@ -16,6 +18,13 @@ const seedDatabase = async () => {
     await Form.create({
       ...form,
       user_id: users[Math.floor(Math.random() * users.length)].id,
+    });
+  }
+
+  // ADDED LOOP FOR REVIEW DATA
+  for (const review of reviewData) {
+      await Review.create({
+        ...review,
     });
   }
 
