@@ -43,23 +43,23 @@ const loginFormHandler = async (event) => {
     }
   };
 
-  // document
-  //   .querySelector('.loginBtn')
-  //   .addEventListener('submit', loginFormHandler);
+  document
+    .querySelector('.loginBtn')
+    .addEventListener('click', loginFormHandler);
 
-  //   document
-  //   .querySelector('.signup')
-  //   .addEventListener('submit', signupFormHandler);
+    document
+    .querySelector('.signup')
+    .addEventListener('click', signupFormHandler);
 
-  const loginButtons = document.querySelectorAll('.loginBtn');
+//   const loginButtons = document.querySelectorAll('.loginBtn');
 
-loginButtons.forEach(button => {
-  button.addEventListener('click', loginFormHandler);        
-});
+// loginButtons.forEach(button => {
+//   button.addEventListener('click', loginFormHandler);        
+// });
 
-const submitButtons = document.querySelectorAll('.signup');
+// const submitButtons = document.querySelectorAll('.signup');
 
-submitButtons.forEach(button => {
-  button.addEventListener('click', signupFormHandler);   
+// submitButtons.forEach(button => {
+//   button.addEventListener('click', signupFormHandler);   
 
-});
+// });
