@@ -2,8 +2,6 @@ const router = require('express').Router();
 const Review = require('../../models/Review');
 const withAuth = require('../../utils/auth');
 
-// doesn't work in insomnia
-
 router.get('/', async (req, res) => {
   try {
 
