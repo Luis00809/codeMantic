@@ -16,6 +16,9 @@ header {
   text-shadow: none; /* Prevent inheritance from `body` */
 }
 
+.cover-container {
+  padding-top: 120px;
+}
 /*
  * Base structure
  */
@@ -29,20 +32,8 @@ body {
 a {
   color: white;
 }
-main {
-  margin-top: 50px;
-.cover-container {
-  max-width: 42em;
-  min-width: none;
-  
-}
-
-#splash-text {
-  text-shadow: none;
-  box-shadow: none;
-  font-size: xx-large !important;
-  font-weight: bold;
-
+#intro-text {
+text-align: center;
 }
 
 /*
@@ -72,5 +63,3 @@ main {
   border-bottom-color: #fff;
 }
 
-
-}

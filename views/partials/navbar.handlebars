@@ -1,73 +1,75 @@
 {{!-- views/navbar.handlebars --}}
 
 {{!-- NAVIGATION BAR --}}
-<nav class="navbar navbar-expand-md navbar-light fixed-top bg-light">
+<div class="container ">
+  <nav class="navbar navbar-expand-md navbar-light fixed-top bg-light h-10%">
 
 
-  <div class="container-fluid d-flex p-2">
+    <div class="container-fluid d-flex p-2">
 
-    {{!-- BRAND LINK WITH PHOTO .. IF WE WANT TO ADD PHOTO HERE WE CAN! --}}
-    <a class="navbar-brand" href="/">
-      <h1 class="float-md-start mb-0">&lt;codeMantic&gt;</h1> {{! PHOTO GOES HERE }}
-    </a>
+      {{!-- BRAND LINK WITH PHOTO .. IF WE WANT TO ADD PHOTO HERE WE CAN! --}}
+      <a class="navbar-brand" href="/">
+        <h1>&lt;codeMantic&gt;</h1> {{! PHOTO GOES HERE }}
+      </a>
 
-    {{!-- TOGGLE BUTTON FOR SMALL SCREENS --}}
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-
-
-    {{!-- NAV LINKS --}}
-    <div class="collapse navbar-collapse" id="navbarCollapse">
-
-      <ul class="navbar-nav me-auto mb-2 mb-md-0">
+      {{!-- TOGGLE BUTTON FOR SMALL SCREENS --}}
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
 
-        {{!-- HOME LINK --}}
-        <li class="nav-item">
+      {{!-- NAV LINKS --}}
+      <div class="collapse navbar-collapse" id="navbarCollapse">
 
-          <a class="nav-link active" aria-current="page" href="/">Home</a>
-
-        </li>
+        <ul class="navbar-nav me-auto mb-2 mb-md-0">
 
 
-        {{!-- ABOUT LINK --}}
-        <li class="nav-item">
+          {{!-- HOME LINK --}}
+          <li class="nav-item">
 
-          <a class="nav-link" href="/about">About CodeMantic</a> 
+            <a class="nav-link active" aria-current="page" href="/">Home</a>
 
-        </li>
-
-
-        {{!-- LOGIN LINK
-        <li class="nav-item">
-
-          <a class="nav-link" href="/login">Login</a> 
-
-        </li> --}}
+          </li>
 
 
-        {{!-- SIGN UP LINK --}}
-        <li class="nav-item">
+          {{!-- ABOUT LINK --}}
+          <li class="nav-item">
 
-          <a class="nav-link" href="/login">Sign Up Today!</a> 
+            <a class="nav-link" href="/about">About CodeMantic</a> 
 
-        </li>
-
-      </ul>
+          </li>
 
 
-      {{!-- SEARCH FORM --}}
-      {{!-- <form class="d-flex">
+          LOGIN LINK
+          <li class="nav-item">
 
-        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <a class="nav-link" href="/login">Login</a> 
 
-        <button class="btn btn-outline-success" type="submit">Search</button> --}}
+          </li>
 
-      </form>
+
+          {{!-- SIGN UP LINK --}}
+          <li class="nav-item">
+
+            <a class="nav-link" href="/login">Sign Up Today!</a> 
+
+          </li>
+
+        </ul>
+
+
+        {{!-- SEARCH FORM --}}
+        {{!-- <form class="d-flex">
+
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+
+          <button class="btn btn-outline-success" type="submit">Search</button> --}}
+
+        </form>
+
+      </div>
 
     </div>
 
+  </nav>
   </div>
-
-</nav>

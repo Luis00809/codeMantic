@@ -14,118 +14,57 @@
     />
     <link type="stylesheet" href="/codeMantic/public/css/styles.css" />
   </head>
-  <body>
-    <body
-      class="d-flex h-100 text-center text-bg-dark"
-      data-new-gr-c-s-check-loaded="14.1125.0"
-      data-gr-ext-installed=""
-    >
-    <div class=>
-          
-      <nav class="navbar navbar-expand-md navbar-light fixed-top bg-light">
+  
+  <body class="h-100 text-bg-dark">
+    <header>
 
+      {{!-- NAVBAR --}}
+      {{> navbar}}
 
-        <div class="container-fluid d-flex w-">
-      
-          {{!-- BRAND LINK WITH PHOTO .. IF WE WANT TO ADD PHOTO HERE WE CAN! --}}
-          <a class="navbar-brand" href="/">
-            <h1 class="float-md-start mb-0">&lt;codeMantic&gt;</h1> {{! TYPELOGO GOES HERE }}
-          </a>
-      
-          {{!-- TOGGLE BUTTON FOR SMALL SCREENS --}}
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-      
-      
-          {{!-- NAV LINKS --}}
-          <div class="collapse navbar-collapse" id="navbarCollapse">
-      
-            <ul class="navbar-nav me-auto mb-2 mb-md-0">
-      
-      
-              {{!-- HOME LINK --}}
-              <li class="nav-item">
-      
-                <a class="nav-link active" aria-current="page" href="/">Home</a>
-      
-              </li>
-      
-      
-              {{!-- ABOUT LINK --}}
-              <li class="nav-item">
-      
-                <a class="nav-link" href="/about">About CodeMantic</a> 
-      
-              </li>
-      
-      
+      </header>
+    
+    <div class="d-flex-wrap container w-75 style=padding-top:120px;">
+    
+      <div class="container d-flex  flex-column">
         
-      
-            </ul>
-      
-          </div>
-      
-        </div>
-      
-      </nav>>
-            <!-- <div>
-              <img
-                src="/assets/images/codemantic_no_background.svg"
-                class="float-md-start mb-0"
-              /> -->
-              <!-- <nav class="nav nav-masthead justify-content-center float-md-end">
-                <a class="nav-link fw-bold py-1 px-0" href="/">Home</a>
-                {{#if logged_in}}
-                <a href="/" id="logout">Logout</a>
-                {{else}} {{/if}}
-                <a class="nav-link fw-bold py-1 px-0" href="#">Contact</a>
-              </nav> -->
-              
-            </div>
-            <!-- {{!-- NAVBAR --}}
-            {{> navbar}} -->
-            
           </header>
 
           <div id="partner-search" class="">
             
             <div class="card custom-card-width">
                 <div class="card body">
-                  <h5 class="card-title">Partner Search</h5>
+                  <h5 class="card-title text-align-center">Partner Search</h5>
                   <form >
-                    
-                    <div class="dropdown">
-                      <label>Partner pronounds:</label>
-                      <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        Dropdown button
-                      </button>
-                      <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="#">She/Her</a></li>
-                        <li><a class="dropdown-item" href="#">He/Him</a></li>
-                        <li><a class="dropdown-item" href="#">They/Them</a></li>
-                        <li><a class="dropdown-item" href="#">Non-binary</a></li>
-                      </ul>
+                    <div class="row">
+                    <div class="checkbox">
+                      <legend class="col-form-label col-md-3 pt-0">Partner pronounds:</legend>
+                      <input  class="form-check-input" type="checkbox">
+                      <label for="she/her">She/Her</label>
+                      <input  class="form-check-input" type="checkbox">
+                      <label for="he/him">He/Him</label>
+                      <input  class="form-check-input" type="checkbox">
+                      <label for="they/them">They/Them</label>
+                      <input  class="form-check-input" type="checkbox">
+                      <label for="non-binary">Non-binary</label>
                     </div>
                     
-  
-    <div class="row">
-      <legend class="col-form-label col-sm-9 pt-0">Operating System</legend>
-      <div class="">
-        <div class="form-check">
-          <input class="form-check-input" type="checkbox" name="gridcheckboxes" id="gridcheckboxes1" value="option1" checked>
-          <label class="form-check-label" for="gridcheckboxs1">
+        <div class="d-inline-flex">
+          <legend class="col-form-label pt-0">Operating System:</legend>
+        <div ">
+        <div class="form-check ">
+          <input class="form-check-input" type="checkbox" name="gridcheckboxes" id="macos" value="option1" >
+          <label class="form-check-label " for="gridcheckboxs1">
            Mac Os
           </label>
         </div>
-        <div class="form-check">
-          <input class="form-check-input" type="checkbox" name="gridcheckboxes" id="gridcheckboxes2" value="option2">
+        <div class="form-check ">
+          <input class="form-check-input" type="checkbox" name="gridcheckboxes" id="windows" value="option2">
           <label class="form-check-label" for="gridcheckboxs2">
             Windows
           </label>
         </div>
-        <div class="form-check">
-          <input class="form-check-input" type="checkbox" name="gridcheckboxes" id="gridcheckboxes3" value="option3">
+        <div class="form-check ">
+          <input class="form-check-input" type="checkbox" name="gridcheckboxes" id="linux" value="option3">
           <label class="form-check-label" for="gridcheckboxs3">
             Linux
           </label>
@@ -133,18 +72,21 @@
       </div>
     </div>
   
-  <div>
+  <div class="d-inline-flex">
     <label>Partner Age range:</label>
+    <div>
     <label>Min</label>
-    <input type="number" id="min-age">
+    <input type="number" min=18  id="min-age">
     <label>Max</label>
-    <input type="number"age id="max-age">
+    <input type="number" max="100" id="max-age">
+  </div>
+  </div>
 
   </div>
   </div>
-  <div class="form-group col">
-    <div class="col-sm-2">Personality type:</div>
-    <div class="col-sm-10">
+  <div class="d-inline-flex">
+    <div class="form-check-inline">Personality type:</div>
+    <div class="col-sm-10 form-check">
       <div class="form-check">
         <input class="form-check-input" type="checkbox" id="gridCheck1">
         <label class="form-check-label" for="gridCheck1">
@@ -159,9 +101,9 @@
       </div>
     </div>
   </div>
-  <div class="row row-col-2">
-    <div class="col">Languages</div>
-    <div class="col-sm-10">
+  <div class="">
+    <div class="col">Languages:</div>
+    <div class="form-group d-inline-flex">
       <div class="form-check">
         <input class="form-check-input" type="checkbox" id="gridCheck1">
         <label class="form-check-label" for="gridCheck1">
@@ -244,15 +186,15 @@
     </div>
   </div>
   <div class="form-group row">
-    <div class="col-sm-10">
-      <button type="submit" class="btn btn-primary">Search</button>
-    </div>
   </div>
 </form>
-        </div>
-      </div>
+</div>
+</div>
+<div class="col-sm-10">
+  <button type="submit" class="btn btn-lg btn-light fw-bold border-white bg-white">Search</button>
+</div>
+</div>
     </body>
-  </body>
   <script
     src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
