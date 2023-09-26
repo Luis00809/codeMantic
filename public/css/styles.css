@@ -6,6 +6,7 @@
 }
 header {
   position: fixed;
+  top: 0;
 }
 /* Custom default button */
 .btn-light,
@@ -15,31 +16,24 @@ header {
   text-shadow: none; /* Prevent inheritance from `body` */
 }
 
-
+.cover-container {
+  padding-top: 120px;
+}
 /*
  * Base structure
  */
 
 body {
+  padding-top: 70px;
   text-shadow: 0 .05rem .1rem rgba(0, 0, 0, .5);
   box-shadow: inset 0 0 5rem rgba(0, 0, 0, .5);
+ 
 }
 a {
   color: white;
 }
-main {
-  margin-top: 50px;
-.cover-container {
-  max-width: 42em;
-  min-width: none;
-}
-
-#splash-text {
-  text-shadow: none;
-  box-shadow: none;
-  font-size: xx-large !important;
-  font-weight: bold;
-
+#intro-text {
+text-align: center;
 }
 
 /*
@@ -69,15 +63,3 @@ main {
   border-bottom-color: #fff;
 }
 
-
-}
-.logo-div {
-  min-height: 20%,;
-  margin-top: 20px;
-
-}
-#logo {
-  width: max(300px, 20vw);
-  background-color: #0a0a23;
-  padding: 0.4rem;
-}

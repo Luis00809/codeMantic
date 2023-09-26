@@ -1,102 +1,68 @@
 <!-- views/userProfile.handlebars -->
 
-{{! views/userProfile.handlebars }}
+<body class="d-flex h-100 text-center text-bg-dark" data-new-gr-c-s-check-loaded="14.1125.0" data-gr-ext-installed="">
+  <header>
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>User Profile</title>     {{! BOOTSTRAP LINK}}
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-<link rel="stylesheet" href="../public/css/styles.css">    {{! LINKED STYLES SHEET IN PUBLIC FOLDER }}
-</head>
-
-
-        {{! USERS PROFILE }}
-  <header class="bg-primary text-white p-3">
-
-    <h1>User Profile</h1>
+          {{!-- NAVBAR --}}
+          {{> navbar}}
 
   </header>
-
-        {{! USERS USERNAME FOR PROFILE }}
-         <main class="container my-5">
-
-        <section>
-
-        <h2>{{user.display_name}}'s Profile</h2>
-
-
-        {{! PROFILE CARD }}
+  <div class="cover-container d-flex w-50 h-50 p-3 mx-auto flex-column">
+    <div class="container row g-5 ">
         <div class="card">
+            <div class="card " style="width: 18rem;">
+                <img src="/codeMantic/public/assets/images/istockphoto-1337144146-612x612.jpg" class="card-img-top" alt="profile">
+                <div class="card-body">
+                  <h5 class="card-title">{{UserName}}</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <button><a href="#" class="btn btn-primary">Debbug my code</a></button>
 
-          {{! CARD BODY FOR USER INFORMATION }}
-        <div class="card-body">
-
-          {{! HEADER }}
-          <h3 class="card-title">User's Profile:</h3>
-
-          {{! UNORDERED LIST FOR USER INFORMATION }}
-          <ul class="list-group list-group-flush">
-
-            {{! USERS EMAIL }}
-            <li class="list-group-item"><strong>Email:</strong> {{user.email}}</li>
-
-            {{! USERS LANGUAGES  }}
-            <li class="list-group-item"><strong>Languages:</strong> {{user.languages}}</li>
-
-            {{! USERS PERSONALITY TYPE }}
-            <li class="list-group-item"><strong>Personality Type:</strong> {{user.personality_type}}</li>
-
-            {{! USERS OPERATING SYSTEM }}
-            <li class="list-group-item"><strong>Operating System:</strong> {{user.operating_system}}</li>
-
-            {{! USERS PRONOUNS }}
-            <li class="list-group-item"><strong>Preferred Pronouns:</strong> {{user.partner_pronouns}}</li>
-          </ul>
+                </div>
         </div>
-      </div>
+        <div>
+            <div class="card-body">
+                <h5 class="card-title">User Profile</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <p class="card-text text-start">Pronouns: {{pronouns}}</p>
+            
+                  <p class="card-text text-start">Age: {{age}}</p>
 
-    </section>
+                  <p class="card-text text-start">Operating System: {{operating}}</p>
+                  
+                  <p class="card-text text-start">Programing Languages:</p>
+                
+                  <ul class="Languages">
+                    {{#each languages}}
+                    <li>{{this}}</li>
+                    {{#each}}
+                  </ul>
+                  <p class="card-text text-start">Personality type: {{personality}}</p>
+                  <p class="card-text text-start">Hobbies:</p>
+                  <ul class="hobbies">
+                    {{#each hobbies}}
+                    <li>{{this}}</li>
+                    {{#each}}
+                  </ul>
+                  <p class="card=text text-start">Bio: {{bio}}</p>
+                  <dataset >
 
-
-
-
-    {{! SECTION BIO AND HOBBIES }}
-    <section>
-
-      {{! USER BIO }}
-      <div class="card mt-3">
-        <div class="card-body">
-          <h3 class="card-title">Bio</h3>
-          <p class="card-text">{{user.bio}}</p>
+              </div>
         </div>
-      </div>
-
-      {{! USER HOBBIES }}
-      <div class="card mt-3">
-        <div class="card-body">
-          <h3 class="card-title">Hobbies</h3>
-          <p class="card-text">{{user.hobbies}}</p>
-        </div>
-      </div>
-
-    </section>
-
-    {{! EDIT PROFILE LINK }}
-    <div class="mt-3">
-      <a href="/editProfile" class="btn btn-primary">Edit Profile</a>
     </div>
-
-  </main>
-
-
-
-{{! FOOTER .. LOCATED IN PARTIAL FOLDER }}
-
-{{> footer}}
+  </div>
 
 </body>
-
+    
+    <script src="/models/User.js"></script>
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+    crossorigin="anonymous"
+  ></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
 </html>
