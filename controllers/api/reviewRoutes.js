@@ -1,7 +1,20 @@
 const router = require('express').Router();
-const { Review } = require('../../models');
+const Review = require('../../models/Review');
 const withAuth = require('../../utils/auth');
 
+// doesn't work in insomnia
+
+router.get('/', async (req, res) => {
+  try {
+
+    const reviewData = await Review.findAll();
+    res.json(reviewData);
+
+  } catch (err) {
+    res.sendStatus(500).send(err);
+    console.log(err);
+  }
+})
 
 router.post('/', withAuth, async (req, res) => {
   try {

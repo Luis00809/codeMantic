@@ -2,6 +2,17 @@ const router = require('express').Router();
 const Form = require('../../models/Form');
 const User = require('../../models/User');
 
+router.get('/forms', async (req, res) => {
+    try {
+
+        const formData = await Form.findAll();
+        res.json(formData);
+    } catch (err) {
+        console.log(err);
+        res.status(500).json(err);
+    }
+})
+
 // create a form 
 router.post('/', async (req, res) => {
     try{
