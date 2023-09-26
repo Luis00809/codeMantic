@@ -9,7 +9,6 @@
       "personality_type":"extroverted",
       "operating_system":"windows",
       "hobbies": "Bubblewrap Popping, Extreme Screen Staring, Music, Traveling, Extreme Pillowfighting, Hiking, Photography, Playing Musical Instruments, Coding Challenges, Data Analysis, Gaming, Cooking",
-      "id":"",
       "ageRange": "18-24",
       "userForm": 1
     },
@@ -24,7 +23,6 @@
       "personality_type":"introverted",
       "operating_system":"windows",
       "hobbies": "Bubblewrap Popping, Extreme Pillowfighting, Reading, Netflix, Baking, Traveling, Extreme Screen Staring, Hulu, Mobile App Development, UX/UI Design, Board Game Nights, Outdoor Adventure",
-      "id":"",
       "ageRange": "25-34",
       "userForm": 2
     },
@@ -39,7 +37,6 @@
       "personality_type":"extroverted",
       "operating_system":"windows",
       "hobbies": "Parkour, Cooking, Hiking, Playing Guitar, VR Gaming, 3D Printing, PC Building, Snapchatting, Coding Competitions, Drone Flying",
-      "id":"",
       "ageRange": "35-44",
       "userForm": 3
     },
@@ -54,7 +51,6 @@
       "personality_type":"extroverted",
       "operating_system":"macOS",
       "hobbies": "Rollerskating, Cooking, Photography, Open-Source Projects, Virtual Reality, Yoga, Hackathons, Web Design, Chatbot Development",
-      "id":"",
       "ageRange": "18-24",
       "userForm": 4
     },
@@ -69,7 +65,6 @@
       "personality_type":"extroverted",
       "operating_system":"macOS",
       "hobbies":"Wood Widdling, Butter Churning, Yarn Weaving, Data Science, 3D Printing, Meditation, Snapchatting, Fitness, Karaoke, Traveling ",
-      "id":"",
       "ageRange": "40-60",
       "userForm": 5
     },
@@ -98,7 +93,6 @@
       "personality_type":"extroverted",
       "operating_system":"macOS",
       "hobbies": "Beard Grooming, Hiking, Cooking, Karaoke, Git Rich Quick Schemes, Gaming, Reading, Programming, Hulu, Writing, Music, Traveling",
-      "id":"",
       "ageRange": "18-24",
       "userForm": 7
     },
@@ -113,7 +107,6 @@
       "personality_type":"extroverted",
       "operating_system":"windows",
       "hobbies": "Bug Hunting, Gaming, Book Collecting, Poetry, Pull Request Picnics, Netflix, Git Rich Quick Schemes",
-      "id":"",
       "ageRange": "18-24",
       "userForm": 8
     },
@@ -128,7 +121,6 @@
       "personality_type":"introverted",
       "operating_system":"windows",
       "hobbies":"Dancing, Emoji-based Communication, Extreme Screen Staring, Debugging, Networking, Cooking, Music, Painting",
-      "id":"",
       "ageRange": "18-24",
       "userForm": 9
     },
@@ -143,7 +135,6 @@
       "personality_type":"introverted",
       "operating_system":"macOS",
       "hobbies":"Swimming in Public Fountains, Git Commit Marathons, Extreme Screen Staring, Merge Conflict Battles ",
-      "id":"",
       "ageRange": "18-24",
       "userForm": 10
     },
@@ -158,7 +149,6 @@
       "personality_type":"extroverted",
       "operating_system":"linux",
       "hobbies": "Drinking Coffee, Skateboarding, Traveling, Painting, Playing Musical Instruments, Netflix, Poetry",
-      "id":"",
       "ageRange": "18-24",
       "userForm": 11
     },
@@ -173,7 +163,6 @@
       "personality_type":"extroverted",
       "operating_system":"linux",
       "hobbies": "Playing Music, Gaming, Biking, Painting, Woodworking, Instagram, README Riddles and Puzzles",
-      "id":"",
       "ageRange": "18-24",
       "userForm": 12
     },
@@ -181,15 +170,15 @@
 
     {
 
-  "languages": "JavaScript, HTML, CSS, PHP",
-  "bio": "When I'm not debugging life's challenges, you'll often catch me dancing my way through new experiences and singing along to my favorite tunes. In my downtime, I like to experiment with cooking, whipping up both delicious and occasionally exotic dishes. I'm also passionate about traveling, exploring new places, and embracing different cultures. If you're ready to join me on this coding adventure filled with pizza and passion, let's chat!",
-  "contact_method": "susy13@hotmail.com",
-  "partner_pronouns": "she",
-  "personality_type": "extroverted",
-  "operating_system": "Windows",
-  "hobbies": "Dancing, Singing, Art, Music, Board Games, Sports, Cooking, Traveling",
-  "id": "",
-  "ageRange": "24-44"
+      "languages": "JavaScript, HTML, CSS, PHP",
+      "bio": "When I'm not debugging life's challenges, you'll often catch me dancing my way through new experiences and singing along to my favorite tunes. In my downtime, I like to experiment with cooking, whipping up both delicious and occasionally exotic dishes. I'm also passionate about traveling, exploring new places, and embracing different cultures. If you're ready to join me on this coding adventure filled with pizza and passion, let's chat!",
+      "contact_method": "susy13@hotmail.com",
+      "partner_pronouns": "she",
+      "personality_type": "extroverted",
+      "operating_system": "Windows",
+      "hobbies": "Dancing, Singing, Art, Music, Board Games, Sports, Cooking, Traveling",
+      "ageRange": "24-44",
+      "userForm": 13
 
     },
 
@@ -202,7 +191,6 @@
       "personality_type":"introverted",
       "operating_system":"macOS', 'windows",
       "hobbies": "Poetry, Reading, Cooking, Stargazing, Debugging, Coding, Netflix, Instagram, Sports, README Riddles and Puzzles",
-      "id":"",
       "ageRange": "18-24",
       "userForm": 14
     },
@@ -217,7 +205,6 @@
       "personality_type":"introverted",
       "operating_system":"windows",
       "hobbies": "Cycling, Coding, Driving, Mobile App Design, AI Research, Robotics, 3D Printing, VR Gaming, Board Game Nights, Cryptocurrency Trading, Coding Challenges, Web Development, Open Source Contributions, README Riddles and Puzzles",
-      "id":"",
       "ageRange": "18-24",
       "userForm": 15
     },
@@ -232,7 +219,6 @@
       "personality_type":"extroverted",
       "operating_system":"windows",
       "hobbies": "DJing, Meditating, Data Science, Sports, Coding Challenges, Gaming Tournaments, Robotics Competitions, Cryptocurrency Trading, Board Game Nights, VR Gaming, Open Source Contributions, Web Development, 3D Printing, Yoga",
-      "id":"",
       "ageRange": "18-24",
       "userForm": 16
     }
