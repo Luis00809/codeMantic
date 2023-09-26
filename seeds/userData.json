@@ -4,127 +4,115 @@
    "email":"amyhytwn@aol.com",
    "password":"password12345",
    "age":27,
-   "pronouns": "she",
-   "id":""
+   "pronouns": "she"
+  
 },
 {
     "display_name":"Josh",
     "email":"jtatum1820@live.com",
     "password":"password12345",
     "age":29,
-    "pronouns": "he",
-    "id":""
+    "pronouns": "he"
+   
  },
  { 
     "display_name":"Joseph",
     "email":"nozerone@hotmail.com",
     "password":"password12345",
     "age":38,
-    "pronouns": "he",
-    "id":""
+    "pronouns": "he"
+    
  },
  {
     "display_name":"Chad",
     "email":"lmnoppp@pm.com",
     "password":"password12345",
     "age":24,
-    "pronouns": "they",
-    "id":""
+    "pronouns": "they"
+    
  },
  { 
     "display_name":"coder4luv",
     "email":"codeallnightlong@icqmail.com",
     "password":"password12345",
     "age":107,
-    "pronouns": "he",
-    "id":""
+    "pronouns": "he"
  },
  {
     "display_name":"codeThis",
     "email":"codethis@rocketmail.com",
     "password":"password12345",
     "age":18,
-    "pronouns": "she",
-    "id":""
+    "pronouns": "she"
  },
  {
     "display_name":"Amy",
     "email":"amy.hill@yahoo.com",
     "password":"password12345",
     "age":50,
-    "pronouns": "she",
-    "id":""
+    "pronouns": "she"
  },
  {
     "display_name":"Colton",
     "email":"colton.mas@aol.com",
     "password":"password12345",
     "age":22,
-    "pronouns": "he",
-    "id":""
+    "pronouns": "he"
  },
  {
     "display_name":"Michael",
     "email":"micheal.davis@gmail.com",
     "password":"password12345",
     "age":35,
-    "pronouns": "he",
-    "id":""
+    "pronouns": "he"
  },
  {
     "display_name":"Thomas",
     "email":"thomasedge@gmail.com",
     "password":"password12345",
     "age":55,
-    "pronouns": "he",
-    "id":""
+    "pronouns": "he"
  },
  {
     "display_name":"Adrian",
     "email":"elturkey@msn.com",
     "password":"password12345",
     "age":30,
-    "pronouns": "they",
-    "id":""
+    "pronouns": "they"
  },
  {
     "display_name":"Glenn",
     "email":"glenn@misfits.com",
     "password":"password12345",
     "age":68,
-    "pronouns": "he",
-    "id":""
+    "pronouns": "he"
  },
  {
     "display_name":"Susy",
     "email":"susy13@hotmail.com",
     "password":"password12345",
     "age":58,
-    "pronouns": "she",
-    "id":""
+    "pronouns": "she"
  },
  {
     "display_name":"Roberto",
     "email":"robb2666@yahoo.com",
     "password":"password12345",
     "age":70,
-    "pronouns": "he",
-    "id":""
+    "pronouns": "he"
  },
  {
     "display_name":"Paloma",
     "email":"pmp239@gmail.com",
     "password":"password12345",
     "age":19,
-    "pronouns": "they",
-    "id":""
+    "pronouns": "they"
  },
  {
     "display_name":"Sugar",
     "email":"suerte33@yahoo.com",
     "password":"password12345",
     "age":40,
-    "pronouns": "she",
-    "id":""
+    "pronouns": "she"
  }
 ]
