@@ -1,7 +1,7 @@
-{{! Reviews }}
+<!-- {{! Reviews }}
 
 {{!-- 100 - continue , 101 - switching Protocols , 102 - Processing , 103- Early Hints , 200 - Ok , 202 - Accepted, 208 - Already Reported , 226 - IM Used , 301 - Moved Permanently , 303 - See other , 400 - Bad Request , 401 - Unauthorized
-402 - Payment Required , 403 - Forbidden , 404 - Not Found , 406 - Not Acceptable , 409 - Confilict , 410 - Gone, 411 - Length Required , 416 - Range Not Satisfiable , 417 - Expectation Failed , 425 - Too Early , 429 - Too many requests , 451 - Unavaialble for Legal Reasons  --}}
+402 - Payment Required , 403 - Forbidden , 404 - Not Found , 406 - Not Acceptable , 409 - Confilict , 410 - Gone, 411 - Length Required , 416 - Range Not Satisfiable , 417 - Expectation Failed , 425 - Too Early , 429 - Too many requests , 451 - Unavaialble for Legal Reasons  --}} -->
 
 
 <!DOCTYPE html>
@@ -16,9 +16,15 @@
 </head>
 
 
-<body>
+<body class="h-100 text-bg-dark">
+    <header>
 
-    <header class="text-center mt-3">   
+        {{!-- NAVBAR --}}
+        {{> navbar}}
+  
+        </header>
+
+    <container class="text-center mt-3">   
 
         {{! REVIEWS HEADER }}
 
@@ -26,9 +32,9 @@
 
         <h2>Leave A Review And Select An HTTP Status Badge For User:</h2>
 
-    </header>
+    </container>
 
- <main class="container mt-4">
+ <main class="cover-container d-flex  w-75 p-3 mx-auto flex-column">
 
     {{! REVIEW FORM}}
     <section class="review-form">
@@ -60,6 +66,7 @@
                 </div>
 
                 {{! SUBMIT BUTTON }}
+                <a href="/submitReviews" class="btn btn-lg btn-light fw-bold border-white bg-white">Submit</a>
                 <a href="/submitReviews" class="btn btn-primary submitBtn">Submit HTTP Status Badge</button>
 
             
