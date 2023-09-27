@@ -21,7 +21,7 @@
         </div>
         <div>
             <div class="card-body">
-                <h5 class="card-title">User Profile</h5>
+                {{!-- <h5 class="card-title">User Profile</h5> --}}
                 {{!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> --}}
                 <p class="card-text text-start">Personal Pronouns: {{user.pronouns}}</p>
                 <p class="card-text text-start">Partner Pronouns: {{user.form.partner_pronouns}}</p>
@@ -49,8 +49,7 @@
                     <p class="card-text text-start">Contact Me: {{user.form.contact_method}}</p>
 
                     <h2>Reviews</h2>
-                     <p class="card-text text-start"> {{review.Review_text}}</p>
-
+                     <p class="card-text text-start"> {{user.review.Review_text}}</p>
 
 
               </div>
