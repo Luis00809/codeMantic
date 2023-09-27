@@ -18,7 +18,6 @@ const loginFormHandler = async (event) => {
       if (response.ok) {
         // Parse the response to get the user's ID
         const { user } = await response.json();
-
         // Redirect to the user's profile page using their ID
         document.location.replace(`profile/user/${user.id}`);
         
