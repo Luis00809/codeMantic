@@ -32,7 +32,11 @@ router.get('/user/:id', async (req, res) => {
                 id: req.params.id,
                 // userForm: req.params.id
             },
-            include: [{ model: Form }],
+            include: [{ 
+                model: Form,
+                attributes: ['languages', 'bio', "contact_method",'partner_pronouns','personality_type', 'operating_system', 'hobbies'],
+             }
+            ],
         });
 
         const user = userData.get({ plain: true });
