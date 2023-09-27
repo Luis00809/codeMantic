@@ -11,40 +11,42 @@
     <div class="container row g-5 ">
         <div class="card">
             <div class="card " style="width: 18rem;">
-                <img src="/codeMantic/public/assets/images/istockphoto-1337144146-612x612.jpg" class="card-img-top" alt="profile">
+                <img src="/assets/images/istockphoto-1337144146-612x612.jpg" class="card-img-top" alt="profile">
                 <div class="card-body">
-                  <h5 class="card-title">{{UserName}}</h5>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                  <button><a href="#" class="btn btn-primary">Debbug my code</a></button>
+                  <h5 class="card-title">{{user.display_name}}</h5>
+                  {{!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <button><a href="#" class="btn btn-primary">Debbug my code</a></button> --}}
 
                 </div>
         </div>
         <div>
             <div class="card-body">
                 <h5 class="card-title">User Profile</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                <p class="card-text text-start">Pronouns: {{pronouns}}</p>
+                {{!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> --}}
+                <p class="card-text text-start">Personal Pronouns: {{user.pronouns}}</p>
+                <p class="card-text text-start">Partner Pronouns: {{user.form.partner_pronouns}}</p>
             
-                  <p class="card-text text-start">Age: {{age}}</p>
+                  <p class="card-text text-start">Age: {{user.age}}</p>
 
-                  <p class="card-text text-start">Operating System: {{operating}}</p>
+                  <p class="card-text text-start">Operating System: {{user.form.operating_system}}</p>
                   
-                  <p class="card-text text-start">Programing Languages:</p>
+                  <p class="card-text text-start">Programing Languages: {{user.form.languages}}</p>
                 
                   <ul class="Languages">
                     {{#each languages}}
                     <li>{{this}}</li>
                     {{/each}}
                   </ul>
-                  <p class="card-text text-start">Personality type: {{personality}}</p>
-                  <p class="card-text text-start">Hobbies:</p>
+                  <p class="card-text text-start">Personality type: {{user.form.personality_type}}</p>
+                  <p class="card-text text-start">Hobbies:{{user.form.hobbies}}</p>
                   <ul class="hobbies">
                     {{#each hobbies}}
                     <li>{{this}}</li>
                     {{/each}}
                   </ul>
-                  <p class="card=text text-start">Bio: {{bio}}</p>
+                  <p class="card=text text-start">Bio: {{user.form.bio}}</p>
                   <dataset >
+                    <p class="card-text text-start">Contact Me: {{user.form.contact_method}}</p>
 
               </div>
         </div>
