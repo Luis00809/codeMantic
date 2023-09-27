@@ -18,10 +18,10 @@ Review.init(
       },
     },
 
-    reviewBadge: {    // ADDED reviewBadge
-      type: DataTypes.STRING,     
-      allowNull: true,  
-    },
+    // reviewBadge: {    // ADDED reviewBadge
+    //   type: DataTypes.STRING,     
+    //   allowNull: true,  
+    // },
 
     // user_id: {
     //   type: DataTypes.STRING,

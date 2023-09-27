@@ -37,10 +37,10 @@ router.get('/user/:id', async (req, res) => {
                 model: Form,
                 attributes: ['languages', 'bio', "contact_method",'partner_pronouns','personality_type', 'operating_system', 'hobbies'],
              },
-             {
-                model: Review,
-                attributes: ['Review_text', 'reviewBadge']
-             },
+            //  {
+            //     model: Review,
+            //     attributes: ['Review_text', 'reviewBadge']
+            //  },
             ],
         });
 

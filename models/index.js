@@ -1,6 +1,6 @@
 const User = require('./User');
 const Form = require('./Form');
-const Review = require('./Review')
+// const Review = require('./Review')
 
 User.hasOne(Form, {
     foreignKey: "userForm",
@@ -24,4 +24,4 @@ Form.belongsTo(User, {
 // })
 
 
-module.exports = { User, Form, Review };
+module.exports = { User, Form};
