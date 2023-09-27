@@ -6,6 +6,7 @@
             {{> navbar}}
 
     </header>
+
 <div class="cover-container d-flex w-50 h-50 p-3 mx-auto flex-column">
     <section>
             <form action="#" class="form signup-form">
@@ -48,13 +49,16 @@
                 </div>
 
                 <div class="mb-3 w-50 p-3 form-check" id="myLanguages">
+
                     <label>my programing languages:</label>
-                    <br>
+                    
+                    <div class="col">
                     <input  type="radio" id="lang-html" name="language">
                     <label  for="lang-html">html</label>
                     <input type="radio" id="lang-css" name="language">
                     <label for="lang-css">css</label>
                     <input type="radio" id="lang-javaScript" name="language">
+
                     <label for="lang-javascript">javaScript</label>
                     <br>
                     <input type="radio" id="lang-python" name="language">
@@ -62,22 +66,27 @@
                     <input type="radio" id="lang-C++" name="language">
                     <label for="lang-C++">C++</label>
                     <br>
+
                     <input type="radio" id="lang-php" name="language">
                     <label for="lang-php">php</label>
                     <input type="radio" id="lang-SQL" name="language">
                     <label for="lang-sql">SQL</label>
                     <input type="radio" id="lang-Java" name="language">
+
                     <label for="lang-Java">Java</label>
                     <br>
+
                     <input type="radio" id="lang-Swift" name="language">
                     <label for="lang-Swift">Swift</label>
                     <input type="radio" id="lang-Perl" name="language">
                     <label for="lang-Perl">Perl</label>
                     <br>
+                    
                     <input type="radio" id="lang-C#" name="language">
                     <label for="lang-C#">C#</label>
                     <input type="radio" id="lang-TypeScript" name="language">
                     <label for="lang-TypeScript">TypeScript</label>
+
                 </div>
                 <div class="mb-3 w-50 p-3" id="myPersonality">
                     <label>my personality type:</label>
@@ -88,19 +97,22 @@
                     <input type="radio" name="personality" id="extrovert">
                     <label for="extrovert" required>extrovert</label>
                 </div>
-
+            </div>
+            <div class="row">
                 <div class="mb-3 w-50 p-3">
-                <label>Bio</label>
-                <textarea id="bio" name="my bio" type="text" rows="4" cols="36" ></textarea>
+                <label style="display:grid;">Bio</label>
+                <textarea id="bio" name="my bio" type="text" rows="6" cols="36" ></textarea>
                 </div>
                 <div class="mb-3 w-50 p-3">
-                    <label>Hobbies:</label>
-                    <textarea id="my-hobbies" type="text" rows="4" clos="36" ></textarea>
+                    <label style="display:grid;">Hobbies:</label>
+                    <textarea id="my-hobbies" type="text" rows="6" cols="36" ></textarea>
 
                 </div>
                 <div class="mb-3 w-50 p-3">
                     <button class="btn btn-primary signupBtn" type="submit">sign up</button>
+
                 </div>
+            </div>
             </form>
             </section>
 

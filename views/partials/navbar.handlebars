@@ -7,10 +7,10 @@
 
     <div class="container-fluid d-flex p-2">
 
-      {{!-- BRAND LINK WITH PHOTO .. IF WE WANT TO ADD PHOTO HERE WE CAN! --}}
+      {{!-- BRAND LINK WITH PHOTO .. IF WE WANT TO ADD PHOTO HERE WE CAN!
       <a class="navbar-brand" href="/">
-        {{!-- <h1>&lt;codeMantic&gt;</h1> {{! PHOTO GOES HERE }} --}}
-      </a>
+        <h1>&lt;codeMantic&gt;</h1> {{! PHOTO GOES HERE }}
+      </a> --}}
 
       {{!-- TOGGLE BUTTON FOR SMALL SCREENS --}}
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
@@ -35,11 +35,13 @@
           {{!-- ABOUT LINK --}}
           <li class="nav-item">
 
-            <a class="nav-link" href="/about">About CodeMantic</a> 
+            <a class="nav-link" href="/about">About</a> 
 
           </li>
 
+
           {{#if logged_in}}
+
           <li class="nav-item">
 
             <a class="nav-link" href="/">logout</a> 
@@ -63,17 +65,6 @@
           </li>
 
         </ul>
-
-
-        {{!-- SEARCH FORM --}}
-        {{!-- <form class="d-flex">
-
-          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-
-          <button class="btn btn-outline-success" type="submit">Search</button> --}}
-
-        </form>
-
       </div>
 
     </div>
