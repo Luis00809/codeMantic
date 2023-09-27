@@ -11,10 +11,10 @@ router.get('/', async (req, res) => {
             // if "this.formKey doesn't work in handlebars then include attributes from Form model"
             });
 
-        // const users = userData.map((data) => data.get({ plain: true }));
-        // res.render('userProfile', {
-        //     users
-        // })
+        const users = userData.map((data) => data.get({ plain: true }));
+        res.render('userProfile', {
+            users
+        })
         res.status(200).json(userData);
 
     } catch (err) {
