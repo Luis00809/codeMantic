@@ -39,16 +39,23 @@
 
           </li>
 
-        </ul>
 
-<ul class="navbar-nav  mb-2 mb-md-0 d-flex ">
-          {{!-- LOGIN LINK --}}
+          {{#if logged_in}}
+
           <li class="nav-item">
+
+            <a class="nav-link" href="/">logout</a> 
+            <a class="nav-link" href="/search">Search Users</a> 
+
+          </li>
+        {{else}}
+
+          <li class="nav-item" id="logout">
 
             <a class="nav-link" href="/login">Login</a> 
 
           </li>
-
+          {{/if}}
 
           {{!-- SIGN UP LINK --}}
           <li class="nav-item">

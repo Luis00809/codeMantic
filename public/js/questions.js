@@ -1,14 +1,3 @@
-const displaySearchResults = async (event) => {
-    event.preventDefault();
-    /* Displays a user profile once clicked on */
-}
-
-const incorrectDebug = async (event) => {
-    event.preventDefault();
-    /* Displays a error message stating "user is not ready to date" */
-}
-
-let questionIndex = 0;
 
 let questions = [
     {
@@ -45,13 +34,34 @@ let questions = [
 
 ];
 
-function userChoice(event) {
-    let userChoice = event.target.textContent /* user choice is the target of the click */
-     let correctChoice = questions[questionIndex].correct;
-     if (userChoice === correctChoice) {
-         displaySearchResults() /* if the correct choice is made them the userCorrect function is called */
-     }else {
-         incorrectDebug() /* if the incorrect choice is made them the userIncorrect function is called */
-     }
-    };
+function redirectToHomepage() {
+    window.location.href = 'http://localhost:3027/'
+}
+
+
+let questionElement = document.getElementById('question');
+let randomIndex = Math.floor(Math.random() * questions.length);
+let randomQuestion = questions[randomIndex];
+questionElement.innerHTML = randomQuestion.question;
+
+
+randomQuestion.selections.forEach((selection) => {
+    let button = document.createElement('button');
+    button.textContent = selection;
+    questionElement.append(button);
+  
+    button.addEventListener('click', function() {
+      if (selection === randomQuestion.correct) {
+        // Redirect to a new page
+        window.location.href = 'http://localhost:3027/solved';
+      } else {
+        setTimeout(redirectToHomepage, 3000);
+        questionElement.innerHTML = "Error Code 400: Incorrect answer. Please brush up on your coding knowledge before trying again"
+      }
+    });
+  });
+  
+  console.log(randomQuestion)
+
+
 
