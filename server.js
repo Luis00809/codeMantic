@@ -52,7 +52,6 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use('/', routes);
 
 
-
 // VIEW HANDLEBAR TEMPLATES
 // HOMEPAGE
 app.get('/', (req, res) => {
