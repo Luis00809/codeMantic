@@ -24,10 +24,37 @@ router.get('/', async (req, res) => {
     }
 });
 
+// get user id
+router.get('/user/:email', async (req, res) => {
+    try {
+
+        const userData = await User.findOne(req.params, {
+            where: {
+                email: req.params.email
+            }
+        });
+
+        res.json(userData);
+    } catch (err) {
+        console.log(err);
+        res.status(500).json(err);
+    }
+});
+
+
 // get specific user
 router.get('/user/:id', async (req, res) => {
     try {
-
+        // Check if the user is logged in
+        if (!req.session.loggedIn) {
+          return res.redirect('/login'); // Redirect to the login page if not logged in
+        }
+    
+        // Check if the requested user ID matches the logged-in user's ID
+        if (req.params.id !== req.session.user_id.toString()) {
+          return res.status(403).send('Access denied'); // Return a 403 Forbidden status
+        }
+    
         const userData = await User.findByPk(req.params.id, {
             where: {
                 id: req.params.id,
@@ -43,18 +70,21 @@ router.get('/user/:id', async (req, res) => {
             //  },
             ],
         });
-
+    
+        if (!userData) {
+          return res.status(404).send('User not found');
+        }
+    
         const user = userData.get({ plain: true });
         res.render('userProfile', {
-            user,
-            loggedIn: req.session.loggedIn
+          user,
+          loggedIn: true, // Set loggedIn to true since the user is logged in
         });
-        // res.status(200).json(userData);
-
-    } catch (err) {
+    
+      } catch (err) {
         console.log(err);
         res.status(500).json(err);
-    }
+      }
 });
 
 router.get('/solved', async (req, res) => {
