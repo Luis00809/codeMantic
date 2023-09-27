@@ -11,7 +11,7 @@ const homeRoutes = require('./controllers/homeRoutes'); // HOME ROUTES ADDED
 
 // SETS UP EXPRESS APP
 const app = express();
-const PORT = process.env.PORT || 3027;
+const PORT = process.env.PORT || 3028;
 
 // HELPERS
 const hbs = exphbs.create({ helpers });
