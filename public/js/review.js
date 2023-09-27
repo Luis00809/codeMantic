@@ -1,7 +1,7 @@
 async function commentHandler(event) {
     event.preventDefault();
   
-    const review_text = document.querySelector(".commentValue").value.trim(); /* change .commentValue to hook into review.handlebars */
+    const review_text = document.querySelector(".#Review_text").value.trim(); 
   
     if (review_text) {
       const response = await fetch('/api/review', {
@@ -22,4 +22,4 @@ async function commentHandler(event) {
     }
   }
   
-  document.querySelector('#comment-value');addEventListener('submit', commentHandler); /* change .commentValue to hook into review.handlebars */
+  document.querySelector('.submitBtn');addEventListener('submit', commentHandler); /* change .commentValue to hook into review.handlebars */
