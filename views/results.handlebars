@@ -1,0 +1,33 @@
+{{#if searchResults}}
+
+{{! CONTAINER SEARCH RESULTS }}
+
+  <div class="container mt-4">
+
+    <h2 class="mb-3">Search Results:</h2>
+
+    <ul class="list-group">
+
+      {{#each searchResults}}
+
+      {{! LIST FOR EACH RESULT }}
+
+        <li class="list-group-item">
+
+          <a href="/userProfile/{{this.id}}" class="text-primary">{{this.display_name}}</a>
+
+        </li>
+
+      {{/each}}
+
+    </ul>
+
+  </div>
+
+{{else}}
+
+{{! DISPLAY MESSAGE IF NO RESULTS FOUND }}
+
+  <p class="mt-4">No results found.</p>
+
+{{/if}} --}}

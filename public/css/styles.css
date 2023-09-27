@@ -63,3 +63,6 @@ text-align: center;
   border-bottom-color: #fff;
 }
 
+nav-right {
+  display: end;
+}
