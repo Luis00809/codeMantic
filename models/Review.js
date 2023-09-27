@@ -49,6 +49,3 @@ Review.init(
 );
 
 module.exports = Review;
-
-//model name was "comment"
-// exported "comment rather than Review" 
