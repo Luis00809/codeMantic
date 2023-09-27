@@ -7,14 +7,17 @@ const signupFormHandler = async (event) => {
     const myPronouns = document.querySelector('#my-pronouns').value.trim();
     const myAge = document.querySelector('#myAge').value.trim();
     const myOperatingSystem = document.querySelector('#myOperatingSystem').value.trim();
-    const myLanguages = document.querySelector('input[name="language"]:checked').value;
-    const myPersonality = document.querySelector('input[name="personality"]:checked').id;
+
+    const myLanguages = Array.from(document.querySelectorAll('#myLanguages input[name=language]:checked')).map(checkbox => checkbox.id.substring(5));
+
+    const myPersonality = Array.from(document.querySelectorAll('#myPersonality input[name=personality]:checked')).map(checkbox => checkbox.id);
+
     const bio = document.querySelector('#bio').value.trim();
     const myHobbies = document.querySelector('#my-hobbies').value.trim();
     
   
     if (email && password) {
-      const response = await fetch('/api/users', {
+      const response = await fetch('/api/users/signup', {
         method: 'POST',
         body: JSON.stringify({ username, email, password,myPronouns, myAge,myOperatingSystem, myLanguages, myPersonality, bio, myHobbies }),
         headers: { 'Content-Type': 'application/json' },
