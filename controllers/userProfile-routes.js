@@ -30,15 +30,17 @@ router.get('/user/:id', async (req, res) => {
         const userData = await User.findByPk(req.params.id, {
             where: {
                 id: req.params.id,
+                // userForm: req.params.id
             },
             include: [{ model: Form }],
         });
 
-        // const user = userData.get({ plain: true });
-        // res.render('userProfile', {
-        //     user,
-        // });
-        res.status(200).json(userData);
+        const user = userData.get({ plain: true });
+        res.render('userProfile', {
+            user,
+            loggedIn: req.session.loggedIn
+        });
+        // res.status(200).json(userData);
 
     } catch (err) {
         console.log(err);
