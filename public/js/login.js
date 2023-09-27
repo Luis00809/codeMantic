@@ -58,6 +58,12 @@ const loginFormHandler = async (event) => {
     .querySelector('#signupbtn')
     .addEventListener('click', signupFormHandler);
 
+    document
+    .querySelector('#aboutSignUpBtn')
+    .addEventListener('click', signupFormHandler);
+
+
+
 //   const loginButtons = document.querySelectorAll('.loginBtn');
 
 // loginButtons.forEach(button => {
