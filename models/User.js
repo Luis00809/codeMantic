@@ -48,6 +48,16 @@ User.init({
         allowNull: false,
         
     },
+    user_id: {
+        type: DataTypes.INTEGER,
+        allowNull: false,
+        references: {
+            model: 'user',
+            key:'id'
+        }
+    }
+
+
     // image: {
     //     type: DataTypes.BLOB,
     //     allowNull: true,

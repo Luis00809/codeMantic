@@ -4,14 +4,29 @@ const { User } = require('../../models');
 // create a user
 router.post('/', async (req, res) => {
   try {
-    const userData = await User.create(req.body);
-
+    const userData = await User.create({
+      dispay_name: req.body.dispay_name,
+      pronouns: req.body.pronouns,
+      email:req.body.email,
+      password:req.body.password,
+      age:req.body.age,
+    })
+  const userFormData = await Form.create({
+      languages: req.body.languages,
+      bio: req.body.bio,
+      contact_method: req.body.contact_method,
+      partner_pronouns: req.body.partner_pronouns,
+      personality_type: req.body.personality_type,
+      operating_system: req.body.operating_system,
+      hobbies: req.body.hobbies,
+  })
+  
     req.session.save(() => {
-      req.session.user_id = userData.id;
+      req.session.user_id = userData.id, userFormData;
       req.session.logged_in = true;
       req.session.userForm = userData.userForm;
 
-      res.status(200).json(userData);
+      res.status(200).json(userData, userFormData);
       req.session.save(() => {
         
       })
