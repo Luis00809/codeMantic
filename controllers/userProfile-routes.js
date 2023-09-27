@@ -1,6 +1,7 @@
 const router = require('express').Router();
 const User = require('../models/User');
 const Form = require('../models/Form');
+const Review = require ('../models/Review')
 
 // get all users and their form data
 router.get('/', async (req, res) => {
@@ -34,8 +35,12 @@ router.get('/user/:id', async (req, res) => {
             },
             include: [{ 
                 model: Form,
-                attributes: ['languages', 'bio', "contact_method",'partner_pronouns','personality_type', 'operating_system', 'hobbies',],
-             }
+                attributes: ['languages', 'bio', "contact_method",'partner_pronouns','personality_type', 'operating_system', 'hobbies'],
+             },
+             {
+                model: Review,
+                attributes: ['Review_text', 'reviewBadge']
+             },
             ],
         });
 

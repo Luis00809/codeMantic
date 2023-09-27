@@ -23,14 +23,22 @@ Review.init(
       allowNull: true,  
     },
 
-    user_id: {
-      type: DataTypes.INTEGER,
-      allowNull: false,
-      // references: {
-      //   model: 'user',
-      //   key: 'id'
-      // }
-    },
+    // user_id: {
+    //   type: DataTypes.STRING,
+    //   allowNull: false,
+    //   references: {
+    //     model: 'user',
+    //     key: 'display_name'
+    //   }
+    // },
+    // userReview: {
+    //   type: DataTypes.STRING,
+    //     allowNull: true,
+    //     references:  {
+    //       model: 'user',
+    //       key: 'id'
+    //   }
+    // }
   },
   {
     sequelize,
