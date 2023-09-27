@@ -57,4 +57,29 @@ router.get('/user/:id', async (req, res) => {
     }
 });
 
+router.get('/solved', async (req, res) => {
+    try {
+
+        const userData = await User.findAll({
+            include: [{ 
+                model: Form,
+                attributes: ['languages', 'bio', "contact_method",'partner_pronouns','personality_type', 'operating_system', 'hobbies'],
+             },
+            ],
+        });
+
+        const user = userData.get({ plain: true });
+        res.render('solved', {
+            user,
+            loggedIn: req.session.loggedIn
+        });
+        // res.status(200).json(userData);
+
+    } catch (err) {
+        console.log(err);
+        res.status(500).json(err);
+    }
+});
+
 module.exports = router;
+
