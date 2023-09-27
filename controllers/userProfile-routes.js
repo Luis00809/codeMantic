@@ -78,7 +78,7 @@ router.get('/user/:id', async (req, res) => {
         const user = userData.get({ plain: true });
         res.render('userProfile', {
           user,
-          loggedIn: true, // Set loggedIn to true since the user is logged in
+          loggedIn: true, 
         });
     
       } catch (err) {
