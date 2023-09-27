@@ -20,10 +20,11 @@ const loginFormHandler = async (event) => {
         const { user } = await response.json();
 
         // Redirect to the user's profile page using their ID
-        document.location.replace(`/profile/user/${user.id}`);
+        document.location.replace(`profile/user/${user.id}`);
         
       } else {
         alert(response.statusText);
+        console.log(err)
       }
     }
   };
@@ -58,9 +59,9 @@ const loginFormHandler = async (event) => {
     .querySelector('#signupbtn')
     .addEventListener('click', signupFormHandler);
 
-    document
-    .querySelector('#aboutSignUpBtn')
-    .addEventListener('click', signupFormHandler);
+    // document
+    // .querySelector('#aboutSignUpBtn')
+    // .addEventListener('click', signupFormHandler);
 
 
 

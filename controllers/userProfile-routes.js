@@ -24,22 +24,7 @@ router.get('/', async (req, res) => {
     }
 });
 
-// get user id
-router.get('/user/:email', async (req, res) => {
-    try {
 
-        const userData = await User.findOne(req.params, {
-            where: {
-                email: req.params.email
-            }
-        });
-
-        res.json(userData);
-    } catch (err) {
-        console.log(err);
-        res.status(500).json(err);
-    }
-});
 
 
 // get specific user
@@ -78,7 +63,7 @@ router.get('/user/:id', async (req, res) => {
         const user = userData.get({ plain: true });
         res.render('userProfile', {
           user,
-          loggedIn: true, 
+          loggedIn: req.session.plain
         });
     
       } catch (err) {
