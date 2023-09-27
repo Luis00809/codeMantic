@@ -1,60 +1,71 @@
 [
-  { 
-      "languages": "Python",
-      "bio":"",
-      "contact_method": "amyhytwn@aol.com",
-      "partner_pronouns":"he",
-      "personality_type":"extroverted",
-      "operating_system":"windows",
-      "hobbies":"Bubblewrap Popping,Extreme Pillowfighting",
-      "id":"",
-      "ageRange": "18-24"
-    },
+
     {
-      "languages": "Python, Java",
-      "bio":"",
+
+      "languages": "Python, Java, JavaScript, C#, Ruby, PHP, HTML, CSS, SQL",
+      "bio": "Hey there! Im Josh. I'm all about code, and if you can't resist a good code review, we might just have a 'pull' between us. Let's work on our 'merge conflicts' and create a harmonious relationship!",
       "contact_method": "jtatum1820@live.com",
       "partner_pronouns":"she",
       "personality_type":"introverted",
       "operating_system":"windows",
-      "hobbies":"Bubblewrap Popping, Extreme Pillowfighting",
-      "id":"",
-      "ageRange": "25-34"
+      "hobbies": "Bubblewrap Popping, Extreme Pillowfighting, Reading, Netflix, Baking, Traveling, Extreme Screen Staring, Hulu, Mobile App Development, UX/UI Design, Board Game Nights, Outdoor Adventure",
+      "ageRange": "25-34",
+      "userForm": 1
+    },
+    { 
+
+      "languages": "JavaScript, CSS, HTML",
+      "bio": "Hello! I'm Peyton, and I'm on a mission to find someone to be the CSS to my HTML. Together, we'll create not just beautiful websites but also a beautiful, responsive love story. When I'm not immersed in code, you can find me popping bubble wrap and having epic pillow fights. You can reach me at amyhytwn@aol.com.",
+      "contact_method": "amyhytwn@aol.com",
+      "partner_pronouns":"he",
+      "personality_type":"extroverted",
+      "operating_system":"windows",
+      "hobbies": "Bubblewrap Popping, Extreme Screen Staring, Music, Traveling, Extreme Pillowfighting, Hiking, Photography, Playing Musical Instruments, Coding Challenges, Data Analysis, Gaming, Cooking",
+      "ageRange": "18-24",
+      "userForm": 2
     },
     {
-      "languages": "c++",
-      "bio":"",
+
+      "languages": "C++, Python, Java, JavaScript, Ruby",
+      "bio":"Looking for love in a byte-sized world. Warning: May break into spontaneous tech rants.",
       "contact_method": "nozerone@hotmail.com",
       "partner_pronouns":"she",
       "personality_type":"extroverted",
       "operating_system":"windows",
-      "hobbies":"parkour",
-      "id":"",
-      "ageRange": "35-44"
+      "hobbies": "Parkour, Cooking, Hiking, Playing Guitar, VR Gaming, 3D Printing, PC Building, Snapchatting, Coding Competitions, Drone Flying",
+      "ageRange": "35-44",
+      "userForm": 3
     },
     {
-      "languages": "python",
-      "bio":"",
+
+      "languages": "Python, Java, JavaScript, Ruby",
+      "bio":"Highly competitive when it comes to board games and trivia nights. I am passionate about web design and chatbot development. Always looking for new ways to make the digital world more interactive and user-friendly.",
       "contact_method": "lmnoppp@pm.com",
       "partner_pronouns":"they",
       "personality_type":"extroverted",
       "operating_system":"macOS",
-      "hobbies":"rollerskating",
-      "id":"",
-      "ageRange": "18-24"
+      "hobbies": "Rollerskating, Cooking, Photography, Open-Source Projects, Virtual Reality, Yoga, Hackathons, Web Design, Chatbot Development",
+      "ageRange": "18-24",
+      "userForm": 4
     },
+
+
     { 
-      "languages": "JavaScript, HTML, CSS,Python",
+
+      "languages": "JavaScript, HTML, CSS, Python",
       "bio":"I enjoy long walks along the field rows and moonshine till morning",
       "contact_method": "codeallnightlong@gmail.com",
       "partner_pronouns":"he",
       "personality_type":"extroverted",
       "operating_system":"macOS",
-      "hobbies":"wood widdling, butter churning, yarn weaving",
-      "id":"",
-      "ageRange": "40-60"
+      "hobbies":"Wood Widdling, Butter Churning, Yarn Weaving, Data Science, 3D Printing, Meditation, Snapchatting, Fitness, Karaoke, Traveling ",
+      "ageRange": "40-60",
+      "userForm": 5
     },
+
+
     {
+
       "languages": "HTML, CSS, JS, C++",
       "bio":"Here FR. If you sus keep scrolling.",
       "contact_method": "codethis@rocketmail.com",
@@ -62,117 +73,148 @@
       "personality_type":"extroverted",
       "operating_system":"macOS",
       "hobbies":"tweeting, minecraft,",
-      "id":"",
-      "ageRange": "18-24"
+      "ageRange": "18-24",
+      "userForm": 6
     },
+
+
     { 
-      "languages": "SQL",
-      "bio":"",
+
+      "languages": "SQL, Python, Java, JavaScript",
+      "bio": "Hi there, I'm Amy, a fun-loving adventure enthusiast with a passion for SQL and exploring the world. I'm always up for an adventure, whether it's hiking in the mountains or trying new cuisines.",
       "contact_method": "amy.hill@yahoo.com",
       "partner_pronouns":"he",
       "personality_type":"extroverted",
       "operating_system":"macOS",
-      "hobbies":"Beard Grooming",
-      "id":"",
-      "ageRange": "18-24"
+      "hobbies": "Beard Grooming, Hiking, Cooking, Karaoke, Git Rich Quick Schemes, Gaming, Reading, Programming, Hulu, Writing, Music, Traveling",
+      "ageRange": "18-24",
+      "userForm": 7
     },
+
+
     {
-      "languages": "C++",
-      "bio":"",
+
+      "languages": "C++, Python, Ruby",
+      "bio": "Hey, I'm Colton, and I'm on a quest to find the yin to my yang. By day .. I'm a C++ coder, but by night .. I'm a bug hunter in the digital wilderness. I'm a book collector and a gamer who loves a good challenge. You can find me at colton.mas@aol.com.",
       "contact_method": "colton.mas@aol.com",
       "partner_pronouns":"he",
       "personality_type":"extroverted",
       "operating_system":"windows",
-      "hobbies":"Bug Hunting",
-      "id":"",
-      "ageRange": "18-24"
+      "hobbies": "Bug Hunting, Gaming, Book Collecting, Poetry, Pull Request Picnics, Netflix, Git Rich Quick Schemes",
+      "ageRange": "18-24",
+      "userForm": 8
     },
+
+
     {
-      "languages": "CSS",
-      "bio":"",
+
+      "languages": "HTML, CSS, JavaScript, Python, Java",
+      "bio":"Hello! Im Micheal! I may be data-driven but my heart beats just like yours. Let's create a love story thats as unique as you are!",
       "contact_method": "micheal.davis@gmail.com",
       "partner_pronouns":"she",
       "personality_type":"introverted",
       "operating_system":"windows",
-      "hobbies":"dancing",
-      "id":"",
-      "ageRange": "18-24"
+      "hobbies":"Dancing, Emoji-based Communication, Extreme Screen Staring, Debugging, Networking, Cooking, Music, Painting",
+      "ageRange": "18-24",
+      "userForm": 9
     },
+
+
     {
-      "languages": "HTML",
-      "bio":"",
+
+      "languages": "HTML, CSS, JavaScript, Python, Java, Ruby, PHP, C++",
+      "bio":"Hey there, I'm Thomas! I believe that 'the only way to do great work is to love what you do,' just like Steve Jobs said. When I'm not coding, you'll often find me swimming in public fountains to embrace the unexpected joys of life.",
       "contact_method": "thomasedge@gmail.com",
       "partner_pronouns":"she",
       "personality_type":"introverted",
       "operating_system":"macOS",
-      "hobbies":"swimming in public fountains",
-      "id":"",
-      "ageRange": "18-24"
+      "hobbies":"Swimming in Public Fountains, Git Commit Marathons, Extreme Screen Staring, Merge Conflict Battles ",
+      "ageRange": "18-24",
+      "userForm": 10
     },
+
+
     {
-      "languages": "",
-      "bio":"",
+
+      "languages": "HTML, CSS, JavaScript, Python, Java",
+      "bio":"Seeking a partner in crime who enjoys laughing at life. By day, I'm coding, and by night, I'm sipping coffee and skateboarding around town. Let's grab a cup of coffee together!",
       "contact_method": "elturkey@msn.com",
       "partner_pronouns":"they",
       "personality_type":"extroverted",
-      "operating_system":"",
-      "hobbies":"driking coffee', 'skateboarding",
-      "id":"",
-      "ageRange": "18-24"
+      "operating_system":"linux",
+      "hobbies": "Drinking Coffee, Skateboarding, Traveling, Painting, Playing Musical Instruments, Netflix, Poetry",
+      "ageRange": "18-24",
+      "userForm": 11
     },
+
+
     {
-      "languages": "java",
-      "bio":"",
+
+      "languages": "Java",
+      "bio":"Down-to-earth guy seeks genuine connection.",
       "contact_method": "glenn@misfits.com",
       "partner_pronouns":"she",
       "personality_type":"extroverted",
       "operating_system":"linux",
-      "hobbies":"playing music",
-      "id":"",
-      "ageRange": "18-24"
+      "hobbies": "Playing Music, Gaming, Biking, Painting, Woodworking, Instagram, README Riddles and Puzzles",
+      "ageRange": "18-24",
+      "userForm": 12
     },
+
+
     {
-      "languages": "javaScript', 'html', 'css', 'php",
-      "bio":"",
+
+      "languages": "JavaScript, HTML, CSS, PHP",
+      "bio": "When I'm not debugging life's challenges, you'll often catch me dancing my way through new experiences and singing along to my favorite tunes. In my downtime, I like to experiment with cooking, whipping up both delicious and occasionally exotic dishes. I'm also passionate about traveling, exploring new places, and embracing different cultures. If you're ready to join me on this coding adventure filled with pizza and passion, let's chat!",
       "contact_method": "susy13@hotmail.com",
-      "partner_pronouns":"she",
-      "personality_type":"extroverted",
-      "operating_system":"windows",
-      "hobbies":"dancing', 'singing",
-      "id":"",
-      "ageRange": "18-24"
+      "partner_pronouns": "she",
+      "personality_type": "extroverted",
+      "operating_system": "Windows",
+      "hobbies": "Dancing, Singing, Art, Music, Board Games, Sports, Cooking, Traveling",
+      "ageRange": "24-44",
+      "userForm": 13
+
     },
+
+
     {
-      "languages": "javaScript', 'python",
-      "bio":"",
+      "languages": "JavaScript, Python",
+      "bio":"Hi, Im Rob! Im in search of someone who can handle my commitment issues. If you don't mind my Git-related puns, we're already on the right branch!",
       "contact_method": "robb2666@yahoo.com",
       "partner_pronouns":"she",
       "personality_type":"introverted",
       "operating_system":"macOS', 'windows",
-      "hobbies":"poetry",
-      "id":"",
-      "ageRange": "18-24"
+      "hobbies": "Poetry, Reading, Cooking, Stargazing, Debugging, Coding, Netflix, Instagram, Sports, README Riddles and Puzzles",
+      "ageRange": "18-24",
+      "userForm": 14
     },
+
+
     {
-      "languages": "ruby', 'html', 'css', 'php', 'java",
-      "bio":"",
+
+      "languages": "Ruby, HTML, CSS, PHP, Java",
+       "bio": "Passionate about coding, and I see myself as the GitHub for your heart: open-source and ready for collaboration. Let's write the code of love together, one 'commit' at a time.",
       "contact_method": "pmp239@gmail.com",
       "partner_pronouns":"they",
       "personality_type":"introverted",
       "operating_system":"windows",
-      "hobbies":"cycling', 'coding', 'driving",
-      "id":"",
-      "ageRange": "18-24"
+      "hobbies": "Cycling, Coding, Driving, Mobile App Design, AI Research, Robotics, 3D Printing, VR Gaming, Board Game Nights, Cryptocurrency Trading, Coding Challenges, Web Development, Open Source Contributions, README Riddles and Puzzles",
+      "ageRange": "18-24",
+      "userForm": 15
     },
+
+
     {
-      "languages": "javaScript', 'ruby', 'python",
-      "bio":"",
+
+      "languages": "JavaScript, Ruby, Python",
+      "bio":"Looking for a partner who can appreciate my ability to write code at 2 AM and still not fix my broken coffee machine. Let's navigate life's syntax errors together!",
       "contact_method": "suerte33@yahoo.com",
       "partner_pronouns":"he",
       "personality_type":"extroverted",
       "operating_system":"windows",
-      "hobbies":"djing', 'meditating', 'yoga",
-      "id":"",
-      "ageRange": "18-24"
+      "hobbies": "DJing, Meditating, Data Science, Sports, Coding Challenges, Gaming Tournaments, Robotics Competitions, Cryptocurrency Trading, Board Game Nights, VR Gaming, Open Source Contributions, Web Development, 3D Printing, Yoga",
+      "ageRange": "18-24",
+      "userForm": 16
     }
+
   ]

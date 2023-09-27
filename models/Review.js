@@ -11,7 +11,7 @@ Review.init(
       autoIncrement: true
     },
     Review_text: {
-      type: DataTypes.STRING,
+      type: DataTypes.TEXT,
       allowNull: false,
       validate: {
         len: [1]
@@ -26,10 +26,10 @@ Review.init(
     user_id: {
       type: DataTypes.INTEGER,
       allowNull: false,
-      references: {
-        model: 'user',
-        key: 'id'
-      }
+      // references: {
+      //   model: 'user',
+      //   key: 'id'
+      // }
     },
   },
   {

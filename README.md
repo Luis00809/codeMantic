@@ -16,9 +16,12 @@ Codemantic, isn't your ordinary dating website, it's a community-driven platform
 - [Links](#links)
 - [Module Two Resume](#module-two-resume)
 - [Deployed Application Screenshot](#deployed-screenshot-of-application)
+- [Technology's Used](#technologys-used)
+- [MVC](#mvc)
 - [Dependencies](#dependencies)
 - [HTTP Status Code](#http-status-codes)
 - [Bootstrap](#bootstrap)
+- [Heroku](#heroku)
 - [MySQL2](#mysql2)
 - [Github](#github)
 - [Handlebars](#handlebars)
@@ -32,6 +35,13 @@ Codemantic, isn't your ordinary dating website, it's a community-driven platform
 - [Features](#features)
 
 ## Installation
+
+### Clone Repository
+
+Links:
+
+- [Cloning a Repoistory](https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository)
+- [Troubleshooting cloning errors](https://docs.github.com/en/repositories/creating-and-managing-repositories/troubleshooting-cloning-errors)
 
 ## Links
 
@@ -52,6 +62,40 @@ Images: (Optional)
 ## Deployed Screenshot of Application
 
 This is where screenshot of deployed application will go
+
+## Technology's Used
+
+### INKSCAPE
+
+Links:
+
+- [Inkscape Website](https://inkscape.org/)
+- [Features of Inkscape](https://inkscape.org/about/features/)
+
+## MVC
+
+### What is it?
+
+The Model-View-Controller ( MVC ) framework is an architectural pattern that adheres to the seperation of concerns principle.
+
+### Model
+
+The Model stores data and data-related logic.
+
+### View
+
+The view is in charge of UI/UX concerns, or what a user will see and interact with.
+
+### Controller
+
+The controller is the interface between Models and Views. It processes requests from the View, uses the Model to manipulate data, and sends data to the View to render.
+
+Links:
+
+- [Model View Controller Wiki](https://en.wikipedia.org/wiki/Model%E2%80%93view%E2%80%93controller)
+- [Modzilla MVC](https://developer.mozilla.org/en-US/docs/Glossary/MVC)
+
+Images:
 
 ## Dependencies
 
@@ -86,6 +130,7 @@ Links:
 
 Links:
 
+- [Bootstrap Images](https://getbootstrap.com/docs/4.0/content/images/)
 - [Bootstrap Forms](https://getbootstrap.com/docs/5.3/forms/overview/)
 - [BootStrap Badges](https://getbootstrap.com/docs/5.3/components/badge/)
 - [Bootsrap Cards](https://getbootstrap.com/docs/5.3/components/card/#body)
@@ -99,6 +144,18 @@ Links:
 - [Introduction](https://getbootstrap.com/docs/4.5/getting-started/introduction/#starter-template)
 - [Bootstrap Blog](https://blog.getbootstrap.com/)
 - [Box Sizing](https://css-tricks.com/box-sizing/)
+
+## Heroku
+
+Links:
+
+- [Heroku: Getting Started](https://devcenter.heroku.com/articles/getting-started-with-nodejs?singlepage=true)
+- [How to Install](https://coding-boot-camp.github.io/full-stack/heroku/how-to-install-the-heroku-cli)
+- [The Heroku CLI](https://devcenter.heroku.com/articles/heroku-cli)
+- [Heroku](https://www.heroku.com/)
+- [Heroku Deployment Guide](https://coding-boot-camp.github.io/full-stack/heroku/heroku-deployment-guide)
+- [Heroku vs AWS: What is the Difference?](https://www.guru99.com/heroku-vs-aws.html)
+- [Deploy with Heroku and MySQL](https://coding-boot-camp.github.io/full-stack/heroku/deploy-with-heroku-and-mysql)
 
 ## mysql2
 
@@ -186,6 +243,10 @@ Images:
 ![Project Requirements](images/project-requirements.jpg)
 
 ## MISC
+
+Links:
+
+- [Dating Profile Bios](https://mydatingadviser.com/best-dating-profile-bios/)
 
 ### To See A List Of Scripts
 

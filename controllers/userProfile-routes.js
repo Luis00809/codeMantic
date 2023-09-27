@@ -7,15 +7,15 @@ router.get('/', async (req, res) => {
     try {
 
         const userData = await User.findAll({
-            include: [{ model: Form }],
+             include: [{ model: Form }],
             // if "this.formKey doesn't work in handlebars then include attributes from Form model"
-        });
+            });
 
         const users = userData.map((data) => data.get({ plain: true }));
-        // res.render('userProfile', {
-        //     users
-        // })
-        res.status(200).json(users);
+        res.render('userProfile', {
+            users
+        })
+        res.status(200).json(userData);
 
     } catch (err) {
         console.log(err);
@@ -27,15 +27,24 @@ router.get('/', async (req, res) => {
 router.get('/user/:id', async (req, res) => {
     try {
 
-        const userData = await User.findByPk(req.params, {
-            include: [{ model: Form }],
+        const userData = await User.findByPk(req.params.id, {
+            where: {
+                id: req.params.id,
+                // userForm: req.params.id
+            },
+            include: [{ 
+                model: Form,
+                attributes: ['languages', 'bio', "contact_method",'partner_pronouns','personality_type', 'operating_system', 'hobbies'],
+             }
+            ],
         });
 
         const user = userData.get({ plain: true });
-        // res.render('userProfile', {
-        //     user,
-        // });
-        res.status(200).json(user);
+        res.render('userProfile', {
+            user,
+            loggedIn: req.session.loggedIn
+        });
+        // res.status(200).json(userData);
 
     } catch (err) {
         console.log(err);

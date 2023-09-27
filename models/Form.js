@@ -3,6 +3,8 @@ const sequelize = require('../config/connection');
 
 class Form extends Model {};
 
+// ***Need to change allowNull for bio back to false before commiting"******
+
 Form.init({
     id: {
         type: DataTypes.INTEGER,
@@ -15,8 +17,8 @@ Form.init({
         allowNull: true,
     }, 
     bio: {
-        type: DataTypes.STRING,
-        allowNull: false, 
+        type: DataTypes.TEXT,
+        allowNull: true, 
     },
     contact_method: {
         type: DataTypes.STRING,
@@ -41,6 +43,14 @@ Form.init({
     hobbies: {
         type: DataTypes.STRING,
         allowNull: true,
+    },
+    userForm: {
+        type: DataTypes.INTEGER,
+        allowNull: false,
+        references: {
+            model: 'user',
+            key: 'id'
+        }
     }
 },
 {
