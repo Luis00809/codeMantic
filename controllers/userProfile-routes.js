@@ -34,7 +34,7 @@ router.get('/user/:id', async (req, res) => {
             },
             include: [{ 
                 model: Form,
-                attributes: ['languages', 'bio', "contact_method",'partner_pronouns','personality_type', 'operating_system', 'hobbies'],
+                attributes: ['languages', 'bio', "contact_method",'partner_pronouns','personality_type', 'operating_system', 'hobbies',],
              }
             ],
         });
