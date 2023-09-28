@@ -6,55 +6,53 @@
           {{> navbar}}
 
   </header>
-  <div class="cover-container d-flex w-50 h-50 p-3 mx-auto flex-column">
-    <div class="container row g-5 ">
-        <div class="card">
-            <div class="card " style="width: 18rem;">
-                <img src="/assets/images/istockphoto-1337144146-612x612.jpg" class="card-img-top" alt="profile">
-                <div class="card-body">
-                  <h5 class="card-title">{{user.display_name}}</h5>
-                  {{!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                  <button><a href="#" class="btn btn-primary">Debbug my code</a></button> --}}
-
-                </div>
-        </div>
-        <div>
+ <div class="">
+      <div class="row g-0" style="margin-top:60px;">
+        <!-- <div class="col-md-4">
+          <img src="..." class="img-fluid rounded-start" alt="...">
+        </div> -->
+        <div class="card col">
+          <img src="/assets/images/istockphoto-1337144146-612x612.jpg" class="card-img" alt="profile">
             <div class="card-body">
-                {{!-- <h5 class="card-title">User Profile</h5> --}}
-                {{!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> --}}
-                <p class="card-text text-start">Personal Pronouns: {{user.pronouns}}</p>
-                <p class="card-text text-start">Partner Pronouns: {{user.form.partner_pronouns}}</p>
-            
-                  <p class="card-text text-start">Age: {{user.age}}</p>
-
-                  <p class="card-text text-start">Operating System: {{user.form.operating_system}}</p>
-                  
-                  <p class="card-text text-start">Programing Languages: {{user.form.languages}}</p>
-                
-                  <ul class="Languages">
-                    {{#each languages}}
-                    <li>{{this}}</li>
-                    {{/each}}
-                  </ul>
-                  <p class="card-text text-start">Personality type: {{user.form.personality_type}}</p>
-                  <p class="card-text text-start">Hobbies:{{user.form.hobbies}}</p>
-                  <ul class="hobbies">
-                    {{#each hobbies}}
-                    <li>{{this}}</li>
-                    {{/each}}
-                  </ul>
-                  <p class="card=text text-start">Bio: {{user.form.bio}}</p>
-                  <dataset >
-                    <p class="card-text text-start">Contact Me: {{user.form.contact_method}}</p>
-
-                    <h2>Reviews</h2>
-                     <p class="card-text text-start"> {{user.review.Review_text}}</p>
-
-
-              </div>
-        </div>
+              <h5 class="card-title">{{user.display_name}}</h5>
+            </div>
     </div>
-  </div>
+        <div class="col-md-8">
+          <div class="card-body card text-bg-secondary">
+            <p class="card-text text-start"><b>Personal Pronouns: </b>{{user.pronouns}}</p>
+            <p class="card-text text-start"><b>Partner Pronouns: </b>{{user.form.partner_pronouns}}</p>
+        
+              <p class="card-text text-start"><b>Age: </b>{{user.age}}</p>
+              <p class="card-text text-start"><b>Operating System: </b>{{user.form.operating_system}}</p>
+              
+              <p class="card-text text-start"><b>Programing Languages: </b>{{user.form.languages}}</p>
+            
+              <ul class="Languages">
+                {{#each languages}}
+                <li>{{this}}</li>
+                {{/each}}
+              </ul>
+              <p class="card-text text-start"><b>Personality type: </b>{{user.form.personality_type}}</p>
+              <p class="card-text text-start"><b>Hobbies: </b>{{user.form.hobbies}}</p>
+              <ul class="hobbies">
+                {{#each hobbies}}
+                <li>{{this}}</li>
+                {{/each}}
+              </ul>
+              <p class="card-text text-start"><b>Bio: </b>{{user.form.bio}}</p>
+              <dataset >
+                <p class="card-text text-start"><b>Contact: </b>{{user.form.contact_method}}</p>
+
+                <h4>Reviews</h4>
+                 <p class="card-text text-start"> {{user.review.Review_text}}</p></small></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <br>
+    <div class="gap-2 col-6 mx-auto">
+      <button class="btn btn-primary" type="button"><a class="btn btn-primary loginBtn" href="/search">Partner Search</a></button>
+    </div>
 
    <script
     src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
