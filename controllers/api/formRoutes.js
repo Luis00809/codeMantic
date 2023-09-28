@@ -51,7 +51,6 @@ router.put('/update/:id', async (req, res) => {
 
 router.get('/filteredList', async (req, res) => {
   try {
-    // Extract filter parameters from the query string
     const {
       operating_system,
       languages,
@@ -62,15 +61,12 @@ router.get('/filteredList', async (req, res) => {
       contact_method,
     } = req.query;
 
-    // Create an array to store the conditions for filtering
     const whereConditions = [];
 
-    // Add conditions for each filter parameter if they are provided
     if (operating_system) {
       whereConditions.push({ operating_system });
     }
     if (languages) {
-      // Split the comma-separated values into an array
       const languageList = languages.split(',');
       const languageConditions = languageList.map(language => ({
         languages: {
@@ -89,7 +85,6 @@ router.get('/filteredList', async (req, res) => {
       whereConditions.push({ ageRange });
     }
     if (hobbies) {
-      // Split the comma-separated values into an array
       const hobbyList = hobbies.split(',');
       const hobbyConditions = hobbyList.map(hobby => ({
         hobbies: {
@@ -102,7 +97,6 @@ router.get('/filteredList', async (req, res) => {
       whereConditions.push({ contact_method });
     }
 
-    // Use Sequelize's findAll method to filter users with all conditions using Op.and
     const filteredUsers = await User.findAll({
       include: [
         {
@@ -116,24 +110,15 @@ router.get('/filteredList', async (req, res) => {
 
     const users = filteredUsers.map((data) => data.get({ plain: true }));
 
-    console.log(users);
+    // console.log(users);
     res.render('filteredUser', { users });
-    // res.json(filteredUsers);
+    // res.json(users);
   } catch (error) {
     console.error(error);
     res.status(500).json({ error: 'Internal server error' });
   }
 });
 
-
-
-
-// client side would look something like this: 
-// const response = await fetch('/api/form/filteredList?FormKey=clientRequest&FormKey=clientRequest...', {
-//  method: 'GET',
-//  body: JSON.stringify({ checkedValues }),
-//   headers: { 'Content-Type': 'application/json' },
-// });
 
 
 module.exports = router;
