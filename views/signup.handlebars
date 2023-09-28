@@ -6,102 +6,96 @@
             {{> navbar}}
 
     </header>
-<div class="container-lg d-flex w-100  p-3  flex-column">
-    <section >
-            <form action="#" class="input-group-sizing">
-                <div class="row" style="display: table-column;">
-                    <div class="w-50  col">
-                        <label for="display-name-login" alt="first name" require> user name</label>
-                        <input class="form-input form-control" type="text" id="display-name" style="margin-bottom: 8px;"/>
-                    </div>
 
-                    <div class="w-50  col" >
-                            <label class=
-                            "col-form-label" for="pronouns" alt="your pronouns" require>my pronouns:</label>
-                            <input class="form-input form-control" list="pronouns" name="pronouns" type="text" id="my-pronouns" require/>
-                            <datalist id="pronouns">
-                                <option>she/her</option>
-                                <option>he/him</option>
-                                <option>they/them</option>
-                                <option>non-binary</option>
-                            </datalist>
-                    </div>
+<div class="cover-container d-flex w-50 h-50 p-3 mx-auto flex-column">
+    <section>
+            <form action="#" class="form signup-form">
+                <div class="mb-3 w-50 p-3 ">
+                    <label for="display-name" alt="first name" required> user name:</label>
+                    <input class="form-input" type="text" id="display-name" />
                 </div>
-                <div class="row">
-                    <div class="mb-3 w-50 p-3">
-                        <label for="email-login" alt="email" require>email</label>
-                        <input class="form-input form-control" type="text" id="email-login" />
-                    </div>
-                
-                    <div class="mb-3 w-50 p-3">
-                        <label for="password" require>password</label>
-                        <input class="form-input form-control"type="password" id="password-login" placeholder="min 8 charr"="8" required />
-                    </div>
-                        
-                </div>
-                <div class="row">
-                    <div class="mb-3 w-50 p-3">
-                        <label class="age-signup ">age</label>
-                        <input  class="form-control" type="number" min="15" max="200">
-                    </div>
-                    <div class="mb-3 w-50 p-3" >
-                        <label>my operating system</label>
-                        <select class="form-select form-select-md" aria-label="Default select example">
-                            <option>Mac OS</option>
-                            <option>Windows</option>
-                            <option>Linux</option>
-                    
-                        </select>
-                    </div>
-                </div>
-            <div class="row justify-content-md-center">
-                <div class="mb-3 w-50 p-3 form-check">
-                    <label>my programing languages:</label>
-                    
-                    <div class="col">
-                    <input  type="radio" id="lang-html" name="language">
-                    <label  for="html">html</label>
-                    <input type="radio" id="lang-css" name="language">
-                    <label for="css">css</label>
-                    <input type="radio" id="lang-javaScript" name="language">
-                    <label for="javascript">javaScript</label>
-                    <input type="radio" id="lang-python" name="language">
-                    <label for="python">python</label>
-                    </div>
-                   
-                    <div class="col">
-                    <input type="radio" id="lang-C++" name="language">
-                    <label for="c++">C++</label>
-                    <input type="radio" id="lang-php" name="language">
-                    <label for="php">php</label>
-                    <input type="radio" id="lang-SQL" name="language">
-                    <label for="sql">SQL</label>
-                    <input type="radio" id="lang-Java" name="language">
-                    <label for="java">Java</label>
-                    </div>
-                    
-                    <div class="col justify-content-center">
-                    <input type="radio" id="lang-Swift" name="language">
-                    <label for="swift">Swift</label>
-                    <input type="radio" id="lang-Perl" name="language">
-                    <label for="perl">Perl</label>
-                    <input type="radio" id="lang-C#" name="language">
-                    <label for="c#">C#</label>
-                    <input type="radio" id="lang-TypeScript" name="language">
-                    <label for="typescript">TypeScript</label>
-                    </div>
 
+                <div class="mb-3 w-50 p-3">
+                        <label for="pronouns" alt="your pronouns" required>my pronouns:</label>
+                        <input list="pronouns" name="pronouns" type="text" id="my-pronouns" require/>
+                        <datalist id="pronouns">
+                            <option>she/her</option>
+                            <option>he/him</option>
+                            <option>they/them</option>
+                            <option>non-binary</option>
+                        </datalist>
                 </div>
                 <div class="mb-3 w-50 p-3">
+                    <label for="signup-email-login" alt="email" required>email:</label>
+                    <input class="form-input" type="text" id="signup-email-login" />
+                </div>
+            
+                <div class="mb-3 w-50 p-3">
+                    <label for="signup-password-login" required>password:</label>
+                    <input class="form-input" type="password" id="signup-password-login" placeholder="min 8 charr"="8" required />
+                </div>
+                <div class="mb-3 w-50 p-3">
+                    <label class="age-signup" required>my age:</label>
+                    <input type="number" min="15" max="200" id="myAge">
+                </div>
+                <div class="mb-3 w-50 p-3">
+                    <label required>my operating system:</label>
+                    <select class="form-select form-select-sm" aria-label="Default select example" id="myOperatingSystem">
+                        <option>Mac OS</option>
+                        <option>Windows</option>
+                        <option>Linux</option>
+                   
+                    </select>
+                </div>
+
+                <div class="mb-3 w-50 p-3 form-check" id="myLanguages">
+
+                    <label>my programing languages:</label>
+                    <br>
+                    <input  type="checkbox" id="lang-html" name="language">
+                    <label  for="lang-html">html</label>
+                    <input type="checkbox" id="lang-css" name="language">
+                    <label for="lang-css">css</label>
+                    <input type="checkbox" id="lang-javaScript" name="language">
+                    <label for="lang-javascript">javaScript</label>
+                    <br>
+                    <input type="checkbox" id="lang-python" name="language">
+                    <label for="lang-python">python</label>
+                    <input type="checkbox" id="lang-C++" name="language">
+                    <label for="lang-C++">C++</label>
+                    <br>
+                    <input type="checkbox" id="lang-php" name="language">
+                    <label for="lang-php">php</label>
+                    <input type="checkbox" id="lang-SQL" name="language">
+                    <label for="lang-sql">SQL</label>
+                    <input type="checkbox" id="lang-Java" name="language">
+                    <label for="lang-Java">Java</label>
+                    <br>
+                    <input type="checkbox" id="lang-Swift" name="language">
+                    <label for="lang-Swift">Swift</label>
+                    <input type="checkbox" id="lang-Perl" name="language">
+                    <label for="lang-Perl">Perl</label>
+                    <br>
+                    <input type="checkbox" id="lang-C#" name="language">
+                    <label for="lang-C#">C#</label>
+                    <input type="checkbox" id="lang-TypeScript" name="language">
+                    <label for="lang-TypeScript">TypeScript</label>
+
+                </div>
+                <div class="mb-3 w-50 p-3" id="myPersonality">
                     <label>my personality type:</label>
                     <br>
-                    <input type="radio" name="personality" id="introvert">
-                    <label for=""introvert>introvert</label>
+                    <input type="checkbox" name="personality" id="myPersonality">
+                    <label for="myPersonality" required>introvert</label>
                     <br>
-                    <input type="radio" name="personality" id="extrovert">
-                    <label for=""extrovert>extrovert</label>
+                    <input type="checkbox" name="personality" id="extrovert">
+                    <label for="extrovert" required>extrovert</label>
                 </div>
             </div>
+            <br>
+            <br>
+            <br>
+            <br>
             <div class="row">
                 <div class="mb-3 w-50 p-3">
                 <label style="display:grid;">Bio</label>
@@ -112,13 +106,22 @@
                     <textarea id="my-hobbies" type="text" rows="6" cols="36" ></textarea>
 
                 </div>
-                <div class="">
-                    <button class="btn btn- btn-light fw-bold border-white bg-white" type="submit">sign up</button>
+                <div class="mb-3 w-50 p-3">
+                    <button class="btn btn-primary signupBtn" type="button">sign up</button>
+
                 </div>
             </div>
             </form>
             </section>
 
 </div>
+<script src="./js/signUp.js"></script>
 
 </body>
+
+
+
+
+
+
+

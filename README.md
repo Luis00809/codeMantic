@@ -6,9 +6,15 @@ Code-Mantic, a tech-savvy dating website deployed on Heroku.
 
 ## Description
 
-Introducing CodeMantic, a groundbreaking project born from the collective creativity of GROUP 3!
+Welcome to the CodeMantic GitHub repository, a groundbreaking project born from the collective creativity of GROUP 3! CodeMantic isn't your ordinary dating website; it's a community-driven platform designed by developers, for developers. Our mission is to help developers connect, collaborate, and potentially find love in the world of code.
 
-Codemantic, isn't your ordinary dating website, it's a community-driven platform designed by developers, for developers. New users are brought up to home page, which allows them to either login or signup.
+CodeMantic is an unique dating application that brings developers together. Whether you're looking for a coding partner, a friend to discuss tech with, or something more, CodeMantic has got you covered. Here are some of the key features that make CodeMantic special:
+
+- Home Page: Users are welcomed to the home page, where they can choose to either log in if they already have an account or sign up for an exciting coding journey.
+- User Profiles: Create or edit your user profile to show-off your favorite hobbies, languages, or operating system.
+- Avatar Selection: Choose an avatar to display as your profile picture.
+- Date Reviews: After going on dates with fellow developers, leave reviews for each other. But here's the twist: we use HTTP status badges to express your feelings about the date, making it fun and tech-themed!
+- Matching Debug: Find potential coding partners or love interests based on shared interests, skills, and more.
 
 ## Table of Contents
 
@@ -22,7 +28,6 @@ Codemantic, isn't your ordinary dating website, it's a community-driven platform
 - [HTTP Status Code](#http-status-codes)
 - [Bootstrap](#bootstrap)
 - [Heroku](#heroku)
-- [MySQL2](#mysql2)
 - [Github](#github)
 - [Handlebars](#handlebars)
 - [Directory Structure](#directory-structure)
@@ -33,15 +38,30 @@ Codemantic, isn't your ordinary dating website, it's a community-driven platform
 - [Badges](#badges)
 - [Tests](#tests)
 - [Features](#features)
+- [Thank You](#thank-you)
 
 ## Installation
 
-### Clone Repository
+### Clone The Repository
+
+Clone this Github Repo:
+
+git clone repo-url
 
 Links:
 
 - [Cloning a Repoistory](https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository)
 - [Troubleshooting cloning errors](https://docs.github.com/en/repositories/creating-and-managing-repositories/troubleshooting-cloning-errors)
+
+## Install Dependencies
+
+Make sure you are in the correct project folder with:
+
+cd correct-project-folder
+
+Install Dependencies with:
+
+npm install
 
 ## Links
 
@@ -99,16 +119,59 @@ Images:
 
 ## Dependencies
 
+### Express
+
 - [Express](https://www.npmjs.com/package/express) popular web application framework for Node.js that simplifies process of building web applications/APIs
+- [Express Github Link](https://github.com/expressjs/express)
 - npm install express
+
+### Express Handlebars
+
 - [Express-handlebars](https://www.npmjs.com/package/express-handlebars) view engine for Express.js that allows you to use Handlebars templates in applications
+- [Express handlebars Github Link](https://github.com/express-handlebars/express-handlebars)
 - npm install express-handlebars
+
+### Express Session
+
+- [Express Session](https://www.npmjs.com/package/express-session)  middleware for managing user sessions in Express.js applications.
+- [Express Session Github Link](https://github.com/expressjs/express)
+- npm install express-session
+
+### Bcrypt
+
 - [bcrypt](https://www.npmjs.com/package/bcrypt) library for hashing passwords securely
+- [bcyrpt github link](https://github.com/kelektiv/node.bcrypt.js)
 - npm install bcrypt
 
-### Want to install all at once?
+### dotenv
 
-npm install express express-handlebars bcrypt
+- [dotenv](https://www.npmjs.com/package/dotenv)  a zero-dependency module that loads environment variables from a .env file into process.env.
+- [dotenv github link](https://www.npmjs.com/package/dotenv)
+- npm install dotenv
+
+### Sequelize
+
+- [sequelize](https://www.npmjs.com/package/sequelize) an easy-to-use and promise-based Node.js ORM tool.
+- [sequelize github link](https://github.com/sequelize/sequelize)
+- npm install sequelize
+
+### connect session sequelize
+
+- [connect-session-sequelize](https://www.npmjs.com/package/connect-session-sequelize) allows you to store/manage user sessions
+- [connect-session-sequelize Github Link](https://github.com/mweibel/connect-session-sequelize)
+- npm install connect-session-sequelize
+
+### mysql2
+
+- [mysql2](https://www.npmjs.com/package/mysql2) MySQL client for Node.js with focus on performance.
+- [mysql2 Github Link](https://github.com/sidorares/node-mysql2)
+- npm install mysql2
+
+### devdependencys
+
+- [Nodemon](https://www.npmjs.com/package/nodemon)  a tool that helps develop Node.js based applications by automatically restarting the node application when file changes in the directory are detected.
+- [Nodemon Github Link](https://github.com/remy/nodemon)
+- npm install nodemon --save-dev
 
 ## HTTP Status Codes
 
@@ -156,10 +219,6 @@ Links:
 - [Heroku Deployment Guide](https://coding-boot-camp.github.io/full-stack/heroku/heroku-deployment-guide)
 - [Heroku vs AWS: What is the Difference?](https://www.guru99.com/heroku-vs-aws.html)
 - [Deploy with Heroku and MySQL](https://coding-boot-camp.github.io/full-stack/heroku/deploy-with-heroku-and-mysql)
-
-## mysql2
-
-- [mysql2 npm](https://www.npmjs.com/package/mysql2)
 
 ## Github
 
@@ -306,3 +365,9 @@ N/A
 :sparkler:
 
 N/A
+
+## Thank You
+
+Thank you for viewing our repo!
+
+And thanks for using CodeMantic. We hope you find it enjoyable and make meaningful connections within the coding community. Happy coding and happy dating!

@@ -1,36 +1,29 @@
 
 let questions = [
-    {
-        question: 
-        `How do you correct this:
-        <link http="stylesheet" href="/css/jass.css"> So that stylesheet jass.css, which is found in the css folder is linked?`,
-        selections: [`<link img="stylesheet" href="/css/jass.css">`, `<link https="stylesheet" href="/css/jass.css">`, `<link rel="stylesheet" href="/css/jass.css">`, `<link src="stylesheet" href="/css/jass.css">`],
-        correct: `<link rel="stylesheet" href="/css/jass.css">`,
-    },
 
     {
-        question: `How do you correct this code so that an event lister is added to the id logout in the DOM?: document.querySelector('#logout').addEventListener('click', logout);`,
+        question: `Which of the following is correct so that an event lister is added to the id logout?`,
         selections: [`document.querySelector('.logout').addEventListener('click', logout);`, `document.querySelector('#logout').addEventListener('click', logout);`, `document.querySelector('^logout').addEventListener('click', logout);`, `document.querySelector('#logout').addListener('click', logout);`, `document.query('#logout').addEventListener('click', logout);`],
         correct: `document.querySelector('#logout').addEventListener('click', logout);`,
     },
 
     {
-        question: `How do you correct this code so that photo image.jpg is correctly rendered?: <img scr="image.jpg" alt="Description of the image">`,
-        selections: [`<img src="images.jpg" alt="Description of the image">`, `<img> src="image.jpg" alt="Description of the image">`, `<img src="image.jpg">< alt="Description of the image">`, `<img src="image.jpg" alt="Description of the image">`, "Code is correct as is"],
+        question: `Which of the following is correct code so that photo image.jpg is correctly rendered?: `,
+        selections: [`<img src="images.jpg" alt="Description of the image">`, `<img> src="image.jpg" alt="Description of the image">`, `<img src="image.jpg">< alt="Description of the image">`, `<img src="image.jpg" alt="Description of the image">`],
         correct: `<img src="image.jpg" alt="Description of the image">`,
     },
 
     {
-        question: `How would you correct this code to display a header with text Hello world: <h2 Hello World</h2>`,
-        selections: [`<h2>Hell0 World</h2>`, `<h1>Hello World </h2>`, `<h2>Hello World</h2>`, "Code is correct as is"],
+        question: `Which of the following is correct code to display a header with text Hello world: <h2 Hello World</h2>`,
+        selections: [`<h2>Hell0 World</h2>`, `<h1>Hello World </h2>`, `<h2>Hello World</h2>`, "None of the above"],
         correct: `<h2>Hello World</h2>`,
     },
 
-    {
-        question: `How would you correct this code  to link login.js file from the folder js to another page?: <script scr="/js/login.js"></script>`,
-        selections: [`<script rel="/js/login.js"></script>`,`<script src="/js/login.js"></script>`, `<scrip src="/js/login.js"></script>`, "Code is correct as is"],
-        correct: `<script src="/js/login.js"></script>`,
-    },
+    // {
+    //     question: `Which line of code is correct to link login.js file from the folder js to another page?`,
+    //     selections: [`<script rel="/js/login.js"></script>`,`<script src="/js/login.js"></script>`, `<scrip src="/js/login.js"></script>`, "None of the above"],
+    //     correct: `<script src="/js/login.js"></script>`,
+    // },
 
 ];
 
