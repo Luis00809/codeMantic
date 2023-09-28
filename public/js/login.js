@@ -1,6 +1,6 @@
 const loginFormHandler = async (event) => {
     event.preventDefault();
-    
+
     // Collect values from the login form
     const email = document.querySelector('#email-login').value.trim();
     const password = document.querySelector('#password-login').value.trim();
@@ -14,16 +14,16 @@ const loginFormHandler = async (event) => {
         body: JSON.stringify({ email, password }),
         headers: { 'Content-Type': 'application/json' },
       });
+      
       if (response.ok) {
-        // If successful, redirect the browser to the profile page
-        const data = await response.json();
-        // console.log(response)
-        const id = 1
-        console.log(id)
+        // Parse the response to get the user's ID
+        const { user } = await response.json();
+        // Redirect to the user's profile page using their ID
+        document.location.replace(`profile/user/${user.id}`);
         
-        document.location.replace(`/profile/user/${id}`);
       } else {
         alert(response.statusText);
+        console.log(err)
       }
     }
   };
@@ -57,6 +57,12 @@ const loginFormHandler = async (event) => {
     document
     .querySelector('#signupbtn')
     .addEventListener('click', signupFormHandler);
+
+    // document
+    // .querySelector('#aboutSignUpBtn')
+    // .addEventListener('click', signupFormHandler);
+
+
 
 //   const loginButtons = document.querySelectorAll('.loginBtn');
 
