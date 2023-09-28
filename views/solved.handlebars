@@ -26,9 +26,64 @@
   </div>
 </div>
 {{/each}}
-   {{!-- <script src="/models/User.js"></script> --}}
 
 
+<div class="main-container">
+<h1>Filter Other Users</h1>
+           
+<div class="mb-3">
+
+
+{{! PROGRAMMING LANGUAGES }}
+<div class="mb-3">
+<label for="programmingLanguagesDrop" class="form-label">Programming Languages:</label>
+  <select id="programmingLanguagesDrop" class="form-select">
+   <option value="Javascript">JavaScript</option>
+   <option value="Python">Python</option>
+   <option value="Java">Java</option>
+   <option value="HTML">HTML</option>
+   <option value="CSS">CSS</option>
+   <option value="SQL">SQL</option>
+   <option value="Ruby">Ruby</option>
+   <option value="PHP">PHP</option>
+</select>
+</div>
+
+
+{{! PERSONALITY TYPES }}
+   <div class="mb-3">
+<label for="personalityTypesDrop" class="form-label">Personality Types:</label>
+<select id="personalityTypesDrop" class="form-select">
+   <option value="introvert">Introvert</option>
+   <option value="extrovert">Extrovert</option>
+   </select>
+   </div>
+
+
+  {{! OPERATING SYSTEMS }}
+   <div class="mb-3">
+  <label for="operatingSystemsDrop" class="form-label">Operating Systems:</label>
+<select id="operatingSystemsDrop" class="form-select">
+   <option value="windows">Windows</option>
+   <option value="mac">Mac</option>
+   <option value="linux">Linux</option>
+</select>
+  </div>
+
+
+{{! PARTNER PRONOUNS }}
+<div class="mb-3">
+<label for="partnerPronounsDrop" class="form-label">Partner Pronouns:</label>
+<select id="partnerPronounsDrop" class="form-select">
+   <option value="he">He</option>
+   <option value="she">She</option>
+   <option value="they">They</option>
+</select>
+</div>
+<br>
+
+{{! APPLY FILTER BUTTON }}
+<button id="applyFilterButton" class="btn btn-primary">Apply Filter</button>
 
 
 
