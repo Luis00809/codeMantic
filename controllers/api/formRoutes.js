@@ -2,6 +2,7 @@ const router = require('express').Router();
 const Form = require('../../models/Form');
 const User = require('../../models/User');
 const { Op } = require('sequelize');
+
 router.get('/forms', async (req, res) => {
     try {
 
@@ -49,49 +50,75 @@ router.put('/update/:id', async (req, res) => {
 // for languages the query would look like: languages=Python,Javascript for multiple
 
 router.get('/filteredList', async (req, res) => {
-    try {
-        // Extract filter parameters from the query string
-        const { operating_system, languages, partner_pronouns, personality_type } = req.query;
-    
-        // Create an empty object to store the conditions for filtering
-        const whereConditions = {};
-    
-        // Add conditions for each filter parameter if they are provided
-        if (operating_system) {
-          whereConditions.operating_system = operating_system;
-        }
-        if (languages) {
-          // Split the comma-separated values into an array
-          const languageList = languages.split(',');
-          
-          // Create an array of conditions for each language
-          const languageConditions = languageList.map(language => ({
-            languages: {
-              [Op.like]: `%${language.trim()}%`, // Partial match for each language
-            },
-          }));
-          
-          // Combine multiple conditions with OR operator
-          whereConditions[Op.or] = languageConditions;
-        }
-        if (partner_pronouns) {
-          whereConditions.partner_pronouns = partner_pronouns;
-        }
-        if (personality_type) {
-          whereConditions.personality_type = personality_type;
-        }
+  try {
+    // Extract filter parameters from the query string
+    const {
+      operating_system,
+      languages,
+      partner_pronouns,
+      personality_type,
+      ageRange,
+      hobbies,
+      contact_method,
+    } = req.query;
 
-    // Use Sequelize's findAll method to filter users
+    // Create an array to store the conditions for filtering
+    const whereConditions = [];
+
+    // Add conditions for each filter parameter if they are provided
+    if (operating_system) {
+      whereConditions.push({ operating_system });
+    }
+    if (languages) {
+      // Split the comma-separated values into an array
+      const languageList = languages.split(',');
+      const languageConditions = languageList.map(language => ({
+        languages: {
+          [Op.like]: `%${language.trim()}%`, // Partial match for each language
+        },
+      }));
+      whereConditions.push({ [Op.or]: languageConditions });
+    }
+    if (partner_pronouns) {
+      whereConditions.push({ partner_pronouns });
+    }
+    if (personality_type) {
+      whereConditions.push({ personality_type });
+    }
+    if (ageRange) {
+      whereConditions.push({ ageRange });
+    }
+    if (hobbies) {
+      // Split the comma-separated values into an array
+      const hobbyList = hobbies.split(',');
+      const hobbyConditions = hobbyList.map(hobby => ({
+        hobbies: {
+          [Op.like]: `%${hobby.trim()}%`, // Partial match for each hobby
+        },
+      }));
+      whereConditions.push({ [Op.or]: hobbyConditions });
+    }
+    if (contact_method) {
+      whereConditions.push({ contact_method });
+    }
+
+    // Use Sequelize's findAll method to filter users with all conditions using Op.and
     const filteredUsers = await User.findAll({
       include: [
         {
           model: Form,
-          where: whereConditions, // Apply the conditions here
+          where: {
+            [Op.and]: whereConditions, // Apply the conditions using Op.and
+          },
         },
       ],
     });
 
-    res.json(filteredUsers);
+    const users = filteredUsers.map((data) => data.get({ plain: true }));
+
+    console.log(users);
+    res.render('filteredUser', { users });
+    // res.json(filteredUsers);
   } catch (error) {
     console.error(error);
     res.status(500).json({ error: 'Internal server error' });
