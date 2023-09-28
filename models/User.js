@@ -1,8 +1,11 @@
+// Import necessary modules and packages
 const { Model, DataTypes } = require('sequelize');
 const sequelize = require('../config/connection');
-const bcrypt = require('bcrypt'); // added bcyrpt
+const bcrypt = require('bcrypt'); // Import bcrypt for password hashing
 
+// Define User model class that extends Model
 class User extends Model {
+    // check if provided password matches stored hashed password
     checkPassword(loginPw) {
         return bcrypt.compareSync(loginPw, this.password);
       }
@@ -20,7 +23,7 @@ User.init({
         allowNull: false,
         
         validate: {
-            len: [5],
+            len: [5],       // Validate display_name length
         },
     }, 
     pronouns: {
@@ -30,17 +33,17 @@ User.init({
     email: {
         type: DataTypes.STRING,
         allowNull: false,
-        unique: true,
+        unique: true,               // Ensure email is unique
 
         validate: {
-            isEmail: true,
+            isEmail: true,          // Validate email format
         },
     },
     password: {
         type: DataTypes.STRING,
         allowNull: false,
         validate: {
-            len: [8],
+            len: [8],                  // Validate password length 
         },
     },
     age: {
@@ -64,6 +67,7 @@ User.init({
     // }
 },
 {
+    // define hooks for password hashing before creating/updating
     hooks: {
         beforeCreate: async (newData) => {
             newData.password = await bcrypt.hash(newData.password, 10);
@@ -77,11 +81,11 @@ User.init({
         },
     },
     sequelize,
-    timestamps: false,
-    freezeTableName: true,
-    underscored: true,
-    modelName: 'user',
+    timestamps: false,          // disable time stamps
+    freezeTableName: true,      // use same table name as model name
+    underscored: true,          
+    modelName: 'user',          // set model name
 }
 );
 
-module.exports = User;
+module.exports = User;      // export user model
