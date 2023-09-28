@@ -17,7 +17,6 @@ const seedDatabase = async () => {
   for (const form of formData) {
     await Form.create({
       ...form,
-      user_id: users[Math.floor(Math.random() * users.length)].id,
     });
   }
 

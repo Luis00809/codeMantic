@@ -3,8 +3,6 @@ const sequelize = require('../config/connection');
 
 class Form extends Model {};
 
-// ***Need to change allowNull for bio back to false before commiting"******
-
 Form.init({
     id: {
         type: DataTypes.INTEGER,
