@@ -1,12 +1,12 @@
 const signupFormHandler = async (event) => {
     event.preventDefault();
   
-    const username = document.querySelector('#display-name').value.trim();
+    const display_name = document.querySelector('#display-name').value.trim();
     const email = document.querySelector('#signup-email-login').value.trim();
     const password = document.querySelector('#signup-password-login').value.trim();
-    const myPronouns = document.querySelector('#my-pronouns').value.trim();
-    const myAge = document.querySelector('#myAge').value.trim();
-    const myOperatingSystem = document.querySelector('#myOperatingSystem').value.trim();
+    const pronouns = document.querySelector('#my-pronouns').value.trim();
+    const age = document.querySelector('#myAge').value.trim();
+    // const myOperatingSystem = document.querySelector('#myOperatingSystem').value.trim();
 
     const myLanguages = Array.from(document.querySelectorAll('#myLanguages input[name=language]:checked')).map(checkbox => checkbox.id.substring(5));
 
@@ -19,12 +19,12 @@ const signupFormHandler = async (event) => {
     if (email && password) {
       const response = await fetch('/api/users/signup', {
         method: 'POST',
-        body: JSON.stringify({ username, email, password,myPronouns, myAge,myOperatingSystem, myLanguages, myPersonality, bio, myHobbies }),
+        body: JSON.stringify({ display_name, email, password, pronouns, age, }),
         headers: { 'Content-Type': 'application/json' },
       });
 
-      console.log(username, email, password,myPronouns, myAge,myOperatingSystem, myLanguages, myPersonality, bio, myHobbies)
-  
+      console.log(display_name, email, password, pronouns, age,)
+      console.log(response);
       if (response.ok) {
         document.location.replace('/profile');
       } else {
