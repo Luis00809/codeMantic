@@ -69,23 +69,24 @@ User.init({
 {
     // define hooks for password hashing before creating/updating
     hooks: {
+        // Hash password before creating a new user
         beforeCreate: async (newData) => {
             newData.password = await bcrypt.hash(newData.password, 10);
             return newData;
         },
+        // Hash password before updating user data if password is provided
         beforeUpdate: async (updatedData) => {
-            if(updatedData.password) {
+            if (updatedData.password) {
                 updatedData.password = await bcrypt.hash(updatedData.password, 10);
             }
             return updatedData;
         },
     },
-    sequelize,
-    timestamps: false,          // disable time stamps
-    freezeTableName: true,      // use same table name as model name
-    underscored: true,          
-    modelName: 'user',          // set model name
-}
-);
-
-module.exports = User;      // export user model
+    sequelize,               // Set sequelize instance for model
+    timestamps: false,       // Disable timestamps for created and updated at
+    freezeTableName: true,   // Use same table name as model name
+    underscored: true,       // Use underscores in column names
+    modelName: 'user',      // Set model name
+});
+// Export User model
+module.exports = User;
