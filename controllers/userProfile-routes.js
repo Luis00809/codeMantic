@@ -14,9 +14,12 @@ router.get('/', async (req, res) => {
 
         const users = userData.map((data) => data.get({ plain: true }));
         res.render('userProfile', {
-            users
+             users
         })
-        res.status(200).json(userData);
+
+        // Delete const after uncomenting 
+        // need to render only using this for insomnia
+        // res.status(200).json(userData);
 
     } catch (err) {
         console.log(err);

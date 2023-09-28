@@ -24,7 +24,7 @@ router.get('/', async (req, res) =>{
 });
 
 // to get a users id
-router.get('/form/:id', async (req, res) => {
+router.get('/:id', async (req, res) => {
     try {
 
         const formData = await Form.findByPk(req.params.id, {
@@ -38,9 +38,9 @@ router.get('/form/:id', async (req, res) => {
 
         const form = formData.get({ plain: true });
 
-        // res.render('handlebar', {
-        //     form,
-        // });
+        res.render('results', {
+            searchResults,
+        });
 
         res.status(200).json(form);
 
@@ -50,6 +50,9 @@ router.get('/form/:id', async (req, res) => {
         res.status(500).json(err);
     }
 });
+
+
+
 
 module.exports = router;
 
