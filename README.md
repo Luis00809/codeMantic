@@ -28,6 +28,7 @@ CodeMantic is an unique dating application that brings developers together. Whet
 - [Bootstrap](#bootstrap)
 - [Handlebars](#handlebars)
 - [License](#license)
+- [Contributors](#contributors)
 - [How to Contribute](#how-to-contribute)
 - [Badges](#badges)
 - [Tests](#tests)
@@ -196,6 +197,13 @@ Links:
  ![License](https://img.shields.io/badge/license-MIT-pink.svg?style=for-the-badge)
 
  This project is licensed under the MIT License
+
+## Contributors
+
+- [Luis Github](https://github.com/Luis00809)
+- [Donnie Github](https://github.com/drawlin22)
+- [Jose Github](https://github.com/nozerone)
+- [Peyton Github](https://github.com/pmastropolo)
 
 ## How to Contribute
 
