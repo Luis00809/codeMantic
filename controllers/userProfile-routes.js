@@ -1,11 +1,12 @@
-const router = require('express').Router();
-const User = require('../models/User');
-const Form = require('../models/Form');
-const Review = require ('../models/Review')
+const router = require('express').Router();   // import express
+const User = require('../models/User');       // import user model
+const Form = require('../models/Form');       // import form model
+const Review = require ('../models/Review');  // import review model
 
 // get all users and their form data
 router.get('/', async (req, res) => {
     try {
+
 
         const userData = await User.findAll({
              include: [{ model: Form }, { model: Review }],
@@ -100,5 +101,5 @@ router.get('/user/:id', async (req, res) => {
 //     }
 // });
 
-module.exports = router;
+module.exports = router;    // Export Router
 

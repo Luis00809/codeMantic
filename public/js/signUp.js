@@ -1,7 +1,7 @@
 const signupFormHandler = async (event) => {
     event.preventDefault();
   
-    // for User
+     // Collect user information
     const display_name = document.querySelector('#display-name').value.trim();
     const email = document.querySelector('#signup-email-login').value.trim();
     const password = document.querySelector('#signup-password-login').value.trim();
@@ -10,12 +10,10 @@ const signupFormHandler = async (event) => {
 
 
 
-    // for Form
+    // Collect form information
     const checkedLanguages = Array.from(document.querySelectorAll('input[type="checkbox"][name="language"]:checked + label'));
     const selectedLang = checkedLanguages.map(label => label.textContent);
     const languages = selectedLang.join(',');
-
-
     const personality_type = document.querySelector('#personality').value
     const bio = document.querySelector('#bio').value.trim();
     const hobbies = document.querySelector('#my-hobbies').value.trim();
@@ -24,7 +22,7 @@ const signupFormHandler = async (event) => {
     const contact_method = document.querySelector('#signup-email-login').value.trim();
     const ageRange = '20-40'
 
-
+    // Log collected data for debugging
     console.log(languages)
     console.log(personality_type)
     console.log(bio);
@@ -39,11 +37,13 @@ const signupFormHandler = async (event) => {
 
     if (email && password) {
       const response = await fetch('/api/users/signup', {
+        // Send POST request to sign up user
         method: 'POST',
         body: JSON.stringify({ display_name, email, password, pronouns, age, }),
         headers: { 'Content-Type': 'application/json' },
       });
 
+      // Retrieve user data from the response
       const user = await response.json();
       sessionStorage.setItem('userId', user.id)
       // if doesnt work try User.id
@@ -51,12 +51,14 @@ const signupFormHandler = async (event) => {
       const userForm = sessionStorage.getItem('userId');
       console.log(userForm);
 
+      // Send POST request to create a form associated with user
       const createForm = await fetch('/api/form/', {
         method: 'POST',
         body: JSON.stringify({languages, personality_type, bio, hobbies, operating_system, partner_pronouns, contact_method, ageRange, userForm}),
         headers: { 'Content-Type': 'application/json' },
       })
 
+      // Retrieve form data from the response
       const form = await createForm.json();
 
       
