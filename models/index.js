@@ -8,10 +8,6 @@ User.hasOne(Form, {
     onDelete: "CASCADE",
     onUpdate: "CASCADE"
 
-User.hasOne(Form, {                    // Define one-to-one relationship: One User has one Form
-    foreignKey: "userForm",           // Use "userForm" as foreign key
-    onDelete: "CASCADE",             // Define onDelete behavior
-    onUpdate: "CASCADE"             // Define onUpdate behavior
 });
 
 Form.belongsTo(User, {               // Define many-to-one relationship: Many Forms belong to one User
@@ -28,8 +24,6 @@ User.hasMany(Review, {
 Review.belongsTo(User, {
     foreignKey: 'review_id'
 })
-
-module.exports = { User, Form};      // Export User and Form models
 
 
 module.exports = { User, Form, Review};
