@@ -2,6 +2,7 @@ const express = require('express');
 const router = express.Router();
 const withAuth = require('../utils/auth');
 const {User, Form} =require('../models')
+const Review = require('../models/Review')
 
 router.get('/', async (req, res) => {
     try{
@@ -53,6 +54,7 @@ router.get('/solved', async (req, res) => {
                     model: Form,
                     attributes: ['languages', 'bio', "contact_method",'partner_pronouns','personality_type', 'operating_system', 'hobbies'],
                  },
+                 { model: Review },
                 ],
             });
     
@@ -70,4 +72,4 @@ router.get('/solved', async (req, res) => {
         }
 });
 
-module.exports = router;
+module.exports = router;    // Export Router

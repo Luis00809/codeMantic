@@ -32,7 +32,7 @@ function redirectToHomepage() {
 }
 
 
-let questionElement = document.getElementById('question');
+let questionElement = document.getElementById('question');                
 let randomIndex = Math.floor(Math.random() * questions.length);
 let randomQuestion = questions[randomIndex];
 questionElement.innerHTML = randomQuestion.question;

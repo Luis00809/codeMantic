@@ -1,21 +1,22 @@
-const Sequelize = require('sequelize');
+const Sequelize = require('sequelize');               // Importing Sequelize library
 require('dotenv').config();
 
-let sequelize;
+let sequelize;                                        
 
-if (process.env.JAWSDB_URL) {
-  sequelize = new Sequelize(process.env.JAWSDB_URL);
+if (process.env.JAWSDB_URL) {                           // Checking if JAWSDB_URL environment variable exists
+  sequelize = new Sequelize(process.env.JAWSDB_URL);    
 } else {
   sequelize = new Sequelize(
-    process.env.DB_NAME,
-    process.env.DB_USER,
-    process.env.DB_PASSWORD,
+    process.env.DB_NAME,                  // Database name
+    process.env.DB_USER,                  // Database username
+    process.env.DB_PASSWORD,              // Database Password
     {
-      host: 'localhost',
-      dialect: 'mysql',
-      port: 3306
+      host: 'localhost',    // Database host
+      dialect: 'mysql',      // Database dialect
+      port: 3306            // Database Port
     }
   );
 }
 
-module.exports = sequelize;
+
+module.exports = sequelize;   // EXPORT

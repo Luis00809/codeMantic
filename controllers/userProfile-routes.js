@@ -1,14 +1,15 @@
-const router = require('express').Router();
-const User = require('../models/User');
-const Form = require('../models/Form');
-const Review = require ('../models/Review')
+const router = require('express').Router();   // import express
+const User = require('../models/User');       // import user model
+const Form = require('../models/Form');       // import form model
+const Review = require ('../models/Review');  // import review model
 
 // get all users and their form data
 router.get('/', async (req, res) => {
     try {
 
+
         const userData = await User.findAll({
-             include: [{ model: Form }],
+             include: [{ model: Form }, { model: Review }],
             // if "this.formKey doesn't work in handlebars then include attributes from Form model"
             });
 
@@ -17,7 +18,6 @@ router.get('/', async (req, res) => {
              users
         })
 
-        // Delete const after uncomenting 
         // need to render only using this for insomnia
         // res.status(200).json(userData);
 
@@ -53,11 +53,8 @@ router.get('/user/:id', async (req, res) => {
             include: [{ 
                 model: Form,
                 attributes: ['languages', 'bio', "contact_method",'partner_pronouns','personality_type', 'operating_system', 'hobbies'],
-             },
-            //  {
-            //     model: Review,
-            //     attributes: ['Review_text', 'reviewBadge']
-            //  },
+              
+             }, { model: Review }
             ],
         });
     
@@ -104,5 +101,5 @@ router.get('/user/:id', async (req, res) => {
 //     }
 // });
 
-module.exports = router;
+module.exports = router;    // Export Router
 
