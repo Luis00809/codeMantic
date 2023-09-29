@@ -16,8 +16,8 @@ const seedDatabase = async () => {                    // Define function/seed da
 
   for (const form of formData) {                      // Loop through form data/create Form records
     await Form.create({
-      ...form,                                        // Spread form data
-      user_id: users[Math.floor(Math.random() * users.length)].id,    // Assign a random user ID
+
+      ...form,
     });
   }
 

@@ -7,9 +7,9 @@ const Review = require ('../models/Review');  // import review model
 router.get('/', async (req, res) => {
     try {
 
-    // Fetch all user data including associated Form data
-    const userData = await User.findAll({
-             include: [{ model: Form }],
+
+        const userData = await User.findAll({
+             include: [{ model: Form }, { model: Review }],
             // if "this.formKey doesn't work in handlebars then include attributes from Form model"
             });
 
@@ -18,7 +18,6 @@ router.get('/', async (req, res) => {
              users
         })
 
-        // Delete const after uncomenting 
         // need to render only using this for insomnia
         // res.status(200).json(userData);
 
@@ -54,11 +53,8 @@ router.get('/user/:id', async (req, res) => {
             include: [{ 
                 model: Form,
                 attributes: ['languages', 'bio', "contact_method",'partner_pronouns','personality_type', 'operating_system', 'hobbies'],
-             },
-            //  {
-            //     model: Review,
-            //     attributes: ['Review_text', 'reviewBadge']
-            //  },
+              
+             }, { model: Review }
             ],
         });
     

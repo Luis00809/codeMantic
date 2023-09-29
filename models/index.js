@@ -1,5 +1,12 @@
-const User = require('./User');        // Import User model
-const Form = require('./Form');        // Import Form model
+
+const User = require('./User');
+const Form = require('./Form');
+const Review = require('./Review')
+
+User.hasOne(Form, {
+    foreignKey: "userForm",
+    onDelete: "CASCADE",
+    onUpdate: "CASCADE"
 
 User.hasOne(Form, {                    // Define one-to-one relationship: One User has one Form
     foreignKey: "userForm",           // Use "userForm" as foreign key
@@ -11,15 +18,18 @@ Form.belongsTo(User, {               // Define many-to-one relationship: Many Fo
     foreignKey: "userForm",          // Use "userForm" as foreign key
 });
 
-// User.hasMany(Review, {             
-//     foreignKey: 'user_id',         
-//     onDelete: "CASCADE",          
-//     onUpdate: "CASCADE"          
-// })
 
-// Review.belongsTo(User, {           
-//     foreignKey: 'user_id'         
-// })
+User.hasMany(Review, {
+    foreignKey: 'review_id',
+    onDelete: "CASCADE",
+    onUpdate: "CASCADE"
+})
+
+Review.belongsTo(User, {
+    foreignKey: 'review_id'
+})
 
 module.exports = { User, Form};      // Export User and Form models
 
+
+module.exports = { User, Form, Review};

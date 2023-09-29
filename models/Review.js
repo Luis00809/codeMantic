@@ -17,28 +17,18 @@ Review.init(
         len: [1]
       },
     },
-
-    // reviewBadge: {    // ADDED reviewBadge
-    //   type: DataTypes.STRING,     
-    //   allowNull: true,  
-    // },
-
-    // user_id: {
-    //   type: DataTypes.STRING,
-    //   allowNull: false,
-    //   references: {
-    //     model: 'user',
-    //     key: 'display_name'
-    //   }
-    // },
-    // userReview: {
-    //   type: DataTypes.STRING,
-    //     allowNull: true,
-    //     references:  {
-    //       model: 'user',
-    //       key: 'id'
-    //   }
-    // }
+    reviewBadge: {    
+      type: DataTypes.STRING,     
+      allowNull: true,  
+    },
+    review_id: {
+      type: DataTypes.INTEGER,
+        allowNull: true,
+        references:  {
+          model: 'user',
+          key: 'id'
+      }
+    }
   },
   {
     sequelize,

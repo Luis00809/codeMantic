@@ -4,8 +4,8 @@ const sequelize = require('../config/connection');
 // Define Form model using Sequelize
 class Form extends Model {};
 
-Form.init(
-  {
+
+Form.init({
     id: {
       type: DataTypes.INTEGER,
       allowNull: false,
