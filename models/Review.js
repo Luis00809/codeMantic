@@ -17,10 +17,6 @@ Review.init(
         len: [1]
       },
     },
-    badge: {    
-      type: DataTypes.STRING,     
-      allowNull: true,  
-    },
     review_id: {
       type: DataTypes.INTEGER,
         allowNull: true,
@@ -28,6 +24,10 @@ Review.init(
           model: 'user',
           key: 'id'
       }
+    },
+    badge: {    
+      type: DataTypes.STRING,     
+      allowNull: true,  
     }
   },
   {
