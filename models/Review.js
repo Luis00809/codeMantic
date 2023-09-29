@@ -17,7 +17,7 @@ Review.init(
         len: [1]
       },
     },
-    review_Badge: {    
+    badge: {    
       type: DataTypes.STRING,     
       allowNull: true,  
     },
