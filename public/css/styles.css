@@ -68,3 +68,11 @@ text-align: center;
 nav-right {
   display: end;
 }
+
+.user-results {
+  display:flex;
+  flex-wrap: wrap;
+}
+.color-card {
+color: darkgray !important;
+}
