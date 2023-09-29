@@ -36,6 +36,7 @@
 <div class="mb-3">
 <label for="programmingLanguagesDrop" class="form-label">Programming Languages:</label>
   <select id="programmingLanguagesDrop" class="form-select">
+   <option value="Select">Select</option>
    <option value="Javascript">JavaScript</option>
    <option value="Python">Python</option>
    <option value="Java">Java</option>
@@ -50,16 +51,18 @@
    <div class="mb-3">
 <label for="personalityTypesDrop" class="form-label">Personality Types:</label>
 <select id="personalityTypesDrop" class="form-select">
-   <option value="introvert">Introvert</option>
-   <option value="extrovert">Extrovert</option>
+   <option value="Select">Select</option>
+   <option value="introverted">Introvert</option>
+   <option value="extroverted">Extrovert</option>
    </select>
    </div>
   {{! OPERATING SYSTEMS }}
    <div class="mb-3">
   <label for="operatingSystemsDrop" class="form-label">Operating Systems:</label>
 <select id="operatingSystemsDrop" class="form-select">
+   <option value="Select">Select</option>
    <option value="windows">Windows</option>
-   <option value="mac">Mac</option>
+   <option value="macOS">mac</option>
    <option value="linux">Linux</option>
 </select>
   </div>
@@ -67,6 +70,7 @@
 <div class="mb-3">
 <label for="partnerPronounsDrop" class="form-label">Partner Pronouns:</label>
 <select id="partnerPronounsDrop" class="form-select">
+   <option value="Select">Select</option>
    <option value="he">He</option>
    <option value="she">She</option>
    <option value="they">They</option>
@@ -76,8 +80,8 @@
 {{! APPLY FILTER BUTTON }}
 <button id="applyFilterButton" class="btn btn-primary">Apply Filter</button>
 {{> footer}}
-<script src="/models/User.js"></script>
-<script src="/js/avatars.js"></script>
+
+<script src="/js/filter.js"></script>
 </body>
 
 </html>

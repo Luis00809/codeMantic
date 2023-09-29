@@ -1,20 +1,18 @@
 const router = require('express').Router();
 const Form = require('../models/Form');
+const User = require('../models/User');
+const Review = require('../models/Review')
 
 // gets all forms
 router.get('/', async (req, res) =>{
     try {
 
         const formData = await Form.findAll({
-            include: [{ model: User }],
+            include: [{ model: User }, { model: Review }],
         });
 
         const forms = formData.map((data) => data.get({ plain: true }));
          
-        // res.render('handlbar', {
-        //     forms,
-        // });
-
         res.status(200).json(forms);
 
     } catch (err) {
@@ -24,11 +22,11 @@ router.get('/', async (req, res) =>{
 });
 
 // to get a users id
-router.get('/form/:id', async (req, res) => {
+router.get('/:id', async (req, res) => {
     try {
 
         const formData = await Form.findByPk(req.params.id, {
-            include: [{ model: User }],
+            include: [{ model: User }, { model: Review }],
         });
 
         if(!formData) {
@@ -38,9 +36,9 @@ router.get('/form/:id', async (req, res) => {
 
         const form = formData.get({ plain: true });
 
-        // res.render('handlebar', {
-        //     form,
-        // });
+        res.render('results', {
+            searchResults,
+        });
 
         res.status(200).json(form);
 
@@ -50,6 +48,9 @@ router.get('/form/:id', async (req, res) => {
         res.status(500).json(err);
     }
 });
+
+
+
 
 module.exports = router;
 
