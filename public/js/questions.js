@@ -46,7 +46,7 @@ randomQuestion.selections.forEach((selection) => {
     button.addEventListener('click', function() {
       if (selection === randomQuestion.correct) {
         // Redirect to a new page
-        window.location.href = 'http://localhost:3027/solved';
+        document.location.replace ('/solved') 
       } else {
         setTimeout(redirectToHomepage, 3000);
         questionElement.innerHTML = "Error Code 400: Incorrect answer. Please brush up on your coding knowledge before trying again"
