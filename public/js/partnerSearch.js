@@ -4,6 +4,6 @@ let searchButton = document.querySelector
 
  searchButton.addEventListener('click', function() {
         // Redirect to a new page
-        window.location.href = 'http://localhost:3027/search'
+        document.location.replace('/search')
 });
 
