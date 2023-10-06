@@ -43,7 +43,9 @@ router.get('/about', (req,res) => {
 });
 
 router.get('/search', (req,res) => {
-  res.render('search')
+  if (req.session.logged_in) {
+    res.render('search');
+  }  
 });
 
 router.get('/solved', async (req, res) => {
@@ -60,11 +62,14 @@ router.get('/solved', async (req, res) => {
     
             const users = userData.map((user) => user.get ({ plain: true }));
             console.log(users)
-            res.render('solved', {
+            if (req.session.logged_in) {
+              res.render('solved', {
                 users,
                 loggedIn: req.session.loggedIn
             });
             // res.status(200).json(userData);
+            }  
+            
     
         } catch (err) {
             console.log(err);
