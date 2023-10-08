@@ -75,8 +75,8 @@ router.get('/user/:id', async (req, res) => {
 // })
 
 
-
-router.post('/submitReview', withAuth, async (req,res) => {
+// add in authenticate later
+router.post('/submitReview', async (req,res) => {
   try {
     const newReview = await Review.create({
       ...req.body,
@@ -84,7 +84,8 @@ router.post('/submitReview', withAuth, async (req,res) => {
     })
     res.status(200).json(newReview);
   }catch (err){
-    res.sendStatus(500).send(err);
+    // res.sendStatus(500).send(err);
+    console.log(err)
   }
 })
 
