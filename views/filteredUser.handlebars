@@ -18,6 +18,22 @@
         <li class="list-group-item">
 
           <a href="/profile/user/{{this.id}}" class="text-primary">{{this.display_name}}</a>
+          <p class="card-text text-start"><b>Personal Pronouns: </b>{{this.pronouns}}</p>
+            <p class="card-text text-start"><b>Partner Pronouns: </b>{{this.form.partner_pronouns}}</p>
+        
+              <p class="card-text text-start"><b>Age: </b>{{this.age}}</p>
+              <p class="card-text text-start"><b>Operating System: </b>{{this.form.operating_system}}</p>
+              
+              <p class="card-text text-start"><b>Programing Languages: </b>{{this.form.languages}}</p>
+            
+              <ul class="Languages">
+                {{#each languages}}
+                <li>{{this}}</li>
+                {{/each}}
+              </ul>
+              <p class="card-text text-start"><b>Personality type: </b>{{this.form.personality_type}}</p>
+              <p class="card-text text-start"><b>Hobbies: </b>{{this.form.hobbies}}</p>
+               <p class="card-text text-start"><b>Reviews:</b> {{this.review.Review_text}}</p>
           <p>{{this.form.operating_system}}<p>
         </li>
     
