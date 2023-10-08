@@ -2,6 +2,7 @@ const router = require('express').Router();   // import express
 const User = require('../models/User');       // import user model
 const Form = require('../models/Form');       // import form model
 const Review = require ('../models/Review');  // import review model
+const withAuth = require('../utils/auth');
 
 // get all users and their form data
 router.get('/', async (req, res) => {
@@ -51,7 +52,6 @@ router.get('/user/:id', async (req, res) => {
           return res.status(404).send('User not found');
         }
     
-        
         const user = userData.get({ plain: true });
         res.render('userProfile', {
           user,
@@ -64,6 +64,29 @@ router.get('/user/:id', async (req, res) => {
         res.status(500).json(err);
       }
 });
+
+
+// router.get('/user/:id/submitReview', async (req,res) => {
+// try {
+//   res.render('submitReviews')
+// } catch (err) {
+// res.status(500).json(err)
+// }
+// })
+
+
+
+router.post('/submitReview', withAuth, async (req,res) => {
+  try {
+    const newReview = await Review.create({
+      ...req.body,
+      user_id:req.session.user_id,
+    })
+    res.status(200).json(newReview);
+  }catch (err){
+    res.sendStatus(500).send(err);
+  }
+})
 
 module.exports = router;    // Export Router
 
