@@ -45,11 +45,12 @@
                 <p class="card-text text-start"><b>Contact: </b>{{user.form.contact_method}}</p>
                 
                     <h2>Reviews</h2>
-                     <p class="card-text text-start"> {{user.review.Review_text}}</p>
-
-                     {{#each user.reviews}}
+                   
+                     {{!-- {{#each user.reviews}} --}}
                     {{> reviewPart }}
-                    {{/each}}
+                     {{!-- <p class="card-text text-start"> {{user.form.review.Review_text}}</p> --}}
+
+                    {{!-- {{/each}} --}}
 
 
               </div>
