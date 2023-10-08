@@ -28,8 +28,6 @@ router.get('/', async (req, res) => {
 });
 
 
-
-
 // get specific user
 router.get('/user/:id', async (req, res) => {
     try {
@@ -44,7 +42,7 @@ router.get('/user/:id', async (req, res) => {
                 attributes: ['languages', 'bio', "contact_method",'partner_pronouns','personality_type', 'operating_system', 'hobbies'],
               
              }, { model: Review,
-                attributes: ['Review_text']
+                attributes: ['Review_text','badge']
              }
             ],
         });
@@ -57,7 +55,7 @@ router.get('/user/:id', async (req, res) => {
         const user = userData.get({ plain: true });
         res.render('userProfile', {
           user,
-          reviews: user.reviews.Review_text,
+          reviews: user.reviews,
           loggedIn: req.session.loggedIn 
         });
     
