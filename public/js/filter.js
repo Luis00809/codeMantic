@@ -5,7 +5,7 @@ const filterHandler = async (event) => {
     const language = document.querySelector('#programmingLanguagesDrop').value;
     const pronouns = document.querySelector('#partnerPronounsDrop').value;
 
-    const url = new URL('/api/form/filteredList', 'http://localhost:3027');
+    const url = new URL('/api/form/filteredList', window.location.origin);
 
     if (operating_system !== "Select") {
         url.searchParams.append('operating_system', operating_system);
