@@ -35,4 +35,18 @@ const filterHandler = async (event) => {
     }
 };
 
+let avatarArray = ['/assets/images/avatar_png_files/avatar_1.png','/assets/images/avatar_png_files/avatar_2.png','/assets/images/avatar_png_files/avatar_3.png','/assets/images/avatar_png_files/avatar_4.png','/assets/images/avatar_png_files/avatar_5.png','/assets/images/avatar_png_files/avatar_6.png','/assets/images/avatar_png_files/avatar_7.png','/assets/images/avatar_png_files/avatar_8.png','/assets/images/avatar_png_files/avatar_9.png','/assets/images/avatar_png_files/avatar_10.png','/assets/images/avatar_png_files/avatar_11.png','/assets/images/avatar_png_files/avatar_12.png','/assets/images/avatar_png_files/avatar_13.png','/assets/images/avatar_png_files/avatar_14.png']
+
+function displayRandomImage() {
+    let elements = document.getElementsByClassName("card");
+    for (var i=0; i < elements.length; i++) {
+        var num = Math.floor(Math.random() * avatarArray.length);
+        elements[i].querySelector('.randomImage').src = avatarArray[num];
+    }
+    
+}
+
+window.onload = displayRandomImage;
+
+
 document.querySelector('#applyFilterButton').addEventListener('click', filterHandler);

@@ -14,7 +14,9 @@
     <div class="row">
     {{#each users as |user| }}
         <div class="card col-lg-4 bg-primary border-dark border-5" style="width: 18rem margin:2px;">
-          <img src="/assets/images/istockphoto-1337144146-612x612.jpg" class="card-img-top " alt="...">
+
+         <img class="randomImage"/>
+          {{!-- <img src="/assets/images/istockphoto-1337144146-612x612.jpg" class="card-img-top " alt="..."> --}}
           <div class=" color-card ">
             <h1 class="card-title"> <b>{{user.display_name}}</b></h1>
             <p class="card-text text-start"><b>Pronouns:</b> {{user.pronouns}}</p>
@@ -25,7 +27,7 @@
             <p class="card-text text-start"><b>Hobbies: </b>{{user.form.hobbies}}</p>
             <p class="card-text text-start"><b>Bio: </b>{{user.form.bio}}</p>
             <p class="card-text text-start"><b>Contact: </b>{{user.form.contact_method}}</p>
-            <p class="card-text text-start"><b>Reviews: </b>{{user.review.Review_text}}</p>
+             {{> reviewPart }}
   </div>
 </div>
 {{/each}}
