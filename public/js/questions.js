@@ -28,7 +28,7 @@ let questions = [
 ];
 
 function redirectToHomepage() {
-    window.location.href = 'http://localhost:3027/'
+  document.location.replace ('/') 
 }
 
 

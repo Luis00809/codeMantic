@@ -48,6 +48,12 @@ router.get('/search', (req,res) => {
   }  
 });
 
+// router.get('/submitReviews', (req,res) => {
+//   if (req.session.loggin_in) {
+//     res.render('submitReviews')
+//   }
+// })
+
 router.get('/solved', async (req, res) => {
   try {
     console.log("test")
