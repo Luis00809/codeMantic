@@ -17,6 +17,18 @@ router.get('/', async (req, res) => {
   }
 });
 
+// router.get('/:id', async (req, res) => {
+//   try {
+//     const reviewData = await Review.findByPk();
+//     // Send JSON response with review data
+//     res.json(reviewData);
+//   } catch (err) {
+//     // Handle errors and send a 500 status code
+//     res.status(500).send(err);
+//     console.log(err);
+//   }
+// });
+
 // Define a route to create a new review (requires authentication)
 router.post('/', withAuth, async (req, res) => {
   try {
